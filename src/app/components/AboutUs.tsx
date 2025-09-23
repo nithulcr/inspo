@@ -23,7 +23,7 @@ export default function AboutUs() {
         </div>
         <div className="flex flex-col gap-4 lg:gap-6 ">
           
-          <h2 className="text-2xl lg:text-[40px] font-medium">Consulting Services
+          <h2 className="text-2xl lg:text-[44px] font-medium leading-tight">Consulting Services
             Empo-wering Your
             Business for Success.</h2>
           <p className="leading-relaxed text-[#A7A9AC]">

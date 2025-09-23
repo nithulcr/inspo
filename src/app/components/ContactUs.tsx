@@ -2,15 +2,7 @@
 
 import { useState } from "react";
 import { Mail, Phone, ArrowRight } from "lucide-react";
-const containerStyle = { width: "100%", height: "400px" };
-const center = { lat: 37.7749, lng: -122.4194 }; // Example coordinates
-const locations = [
-  { name: "Nagpur", lat: 21.1458, lng: 79.0882 },
-  { name: "Odisha", lat: 20.9517, lng: 85.0985 },
-  { name: "Goa", lat: 15.2993, lng: 74.1240 },
-  { name: "Bangalore", lat: 12.9716, lng: 77.5946 },
-  { name: "Telangana", lat: 17.3850, lng: 78.4867 },
-];
+
 
 export default function ContactSection() {
   const [loading, setLoading] = useState(false);
@@ -150,79 +142,7 @@ export default function ContactSection() {
           </form>
         </div>
 
-        <div className="max-w-[1320px] px-6  mt-18 lg:mt-36">
-
-          <div className="max-w-[730px] mx-auto text-center mb-10">
-            <h2 className="text-3xl lg:text-5xl font-medium mb-6">Find Our Offices</h2>
-            <p className="leading-relaxed ">
-              Our offices are strategically located across key regions to provide accessible, efficient service and support to our valued customers. Explore our head office and branch locations to find the nearest contact point for your needs.
-            </p>
-          </div>
-          <div className="mx-auto grid  md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-3xl  rounded-bl-none p-6 transition-all duration-300 relative top-0 hover:top-[-6px]">
-              <h3 className="text-xl  mb-4">Head Office</h3>
-              <p>
-                Plot #74, Road #3, Jupiter Colony, Sikh Road, Sikh Village<br />
-                Secunderabad, Telangana, INDIA 500009<br />
-                Telefax: 040-27841857<br />
-                Phone: +91-9849018828, +91-9985370478, 040 - 27841857
-              </p>
-              <div className="flex items-center gap-4 mt-3">
-                <Mail size={24} color="var(--blue)" />
-                <div>
-                  <a href="mailto:info@cpagencies.co.in" className="text-md font-medium block">info@cpagencies.co.in</a>
-                  <a href="mailto:support@cpagencies.co.in" className="text-md font-medium block">support@cpagencies.co.in</a>
-                </div>
-              </div>
-            </div>
-
-
-            {/* Branch Offices */}
-            <div className="bg-white rounded-3xl  rounded-bl-none p-6 transition-all duration-300 relative top-0 hover:top-[-6px]">
-              <h3 className="text-xl  mb-4">Branch Office</h3>
-
-              {/* Bangalore Branch */}
-              <div className="mb-6">
-                <p>
-                  
-                  No.112, First floor, 12th cross<br />
-                  OPP: Mount Carmel school<br />
-                  Ideal Homes, Rajarajeswari Nagar<br />
-                  Bangalore – 560098, Karnataka<br />
-                  <strong>Contact Person:</strong> MR. K Murali<br />
-                  Phone: +91-9741120522<br />
-                  Mon - Sat 9.00 - 20.00, Sunday CLOSED
-                </p>
-                <div className="flex items-center gap-4 mt-2">
-                  <Mail size={20} color="var(--blue)" />
-                  <a href="mailto:km@cpagencies.co.in" className="text-md font-medium">km@cpagencies.co.in</a>
-                </div>
-              </div>
-
-            </div>
-
-            <div className="bg-white rounded-3xl  rounded-bl-none p-6 transition-all duration-300 relative top-0 hover:top-[-6px]">
-              <h3 className="text-xl  mb-4">Branch Office</h3>
-
-              <div>
-                <p>
-                
-                  D Block, D22, 3rd Floor<br />
-                  NELSON Chambers, Nelson Manickam Road<br />
-                  Chennai – 600029, Tamil Nadu<br />
-                  <strong>Contact Person:</strong> MR. P Ghuhan<br />
-                  Phone: +91-9566270812<br />
-                  Mon - Sat 9.00 - 20.00, Sunday CLOSED
-                </p>
-                <div className="flex items-center gap-4 mt-2">
-                  <Mail size={20} color="var(--blue)" />
-                  <a href="mailto:pg@cpagencies.co.in" className="text-md font-medium">pg@cpagencies.co.in</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
+       
       </section>
       
     </>

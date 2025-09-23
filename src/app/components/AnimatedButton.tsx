@@ -68,7 +68,7 @@ export default function AnimatedButton({
       >
         <div className="button-outline"></div>
         <div ref={outlineRef} className="button-text flex items-center gap-2">{label}{imgOrSvg && (
-          <span className="img_or_svg z-9 ml-2">
+          <span className="img_or_svg z-9">
             {imgOrSvg}
           </span>
         )}</div>
@@ -89,8 +89,8 @@ export default function AnimatedButton({
       download={href?.endsWith(".pdf") ? true : undefined}
     >
       <div className="button-outline"></div>
-      <div ref={outlineRef} className="button-text flex items-center gap-3">{label} {imgOrSvg && (
-        <span className="img_or_svg z-9 ml-2">
+      <div ref={outlineRef} className="button-text flex items-center gap-2">{label} {imgOrSvg && (
+        <span className="img_or_svg z-9">
           {imgOrSvg}
         </span>
       )}</div>

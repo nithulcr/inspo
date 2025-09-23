@@ -42,7 +42,7 @@ export default function ThreeStepProcess() {
     return (
         <section className="bg-[var(--blue)] py-14 lg:py-26">
             <div className="max-w-[1320px] mx-auto px-6">
-                <h2 className="text-white text-2xl lg:text-[40px] font-medium  text-center mb-14">
+                <h2 className="text-white text-2xl lg:text-[50px] font-medium  text-center mb-14">
                     Easy 3 Steps To Work
                 </h2>
                 

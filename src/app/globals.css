@@ -194,7 +194,7 @@ body {
 }
 
 .button-outline {
-  border: 2px solid var(--blue);
+  border: 1px solid #fff;
   background-color: var(--blue);
   border-radius: 24px;
   width: 100%;
@@ -204,11 +204,6 @@ body {
   backdrop-filter: blur(2px);
 }
 
-.white-btn .button-outline {
-  background: rgba(255, 255, 255, 1);
-  border: 2px solid rgba(255, 255, 255, 1);
-
-}
 
 .transparent-btn .button-outline {
   background: #fff;
@@ -223,13 +218,16 @@ body {
 
 }
 
+.reverse-flex .button-text{
+  flex-direction: row-reverse;
+}
 
 .button-text {
   z-index: 25;
   position: relative;
   text-align: center;
   transition: .3s;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .transparent-btn .button-text {

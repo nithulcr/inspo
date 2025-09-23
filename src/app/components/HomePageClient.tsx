@@ -10,8 +10,8 @@ import ThreeStepProcess from "./ThreeStepProcess";
 import Features from "./Features";
 
 import AboutUs from "./AboutUs";
+import UaeCompanyCards from "./UaeCompanyCards";
 
-import ProductsSlide from "./ProductsSlide";
 
 
 import Testimonials from "./Testimonials";
@@ -21,7 +21,6 @@ import ContactUs from "./ContactUs";
 
 import ConsultationBanner from "./ConsultationBanner";
 
-import QuoteSection from "./QuoteSection";
 import Services from "./Services";
 import Partners from "./Partners";
 import Footer from "./Footer";
@@ -55,27 +54,29 @@ export default function HomePageClient() {
         <>
           <Header />
           <Hero />
-           <Features /> 
-           <Marquee /> 
+          <Features />
+          <Marquee />
 
 
           <AboutUs />
-                    <ThreeStepProcess />
+          <ThreeStepProcess />
           <Services />
 
 
-                    <ConsultationBanner />
-          
-          <ProductsSlide />
-          
-
-
-          <QuoteSection />
+          <ConsultationBanner />
+          <UaeCompanyCards />
           <Testimonials />
-          {/* <ContactUs /> */}
+
+<Partners />
+ <ContactUs />
 
 
-          <Partners />
+
+
+         
+
+
+          
           <Footer />
         </>
       )}
