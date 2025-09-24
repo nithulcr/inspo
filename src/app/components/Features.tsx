@@ -93,7 +93,7 @@ export default function Features() {
 
     return (
         <section id="features" className="py-12 lg:py-20  relative text-white lg:mt-[-180px] z-10">
-            <div className="max-w-[1320px] mx-auto px-6">
+            <div className="max-w-[1200px] mx-auto px-6">
 
                 <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  relative bg-[var(--blue)] rounded-3xl">
                     {features.map((feature) => (
@@ -104,7 +104,7 @@ export default function Features() {
                             transition={{ duration: 0.5 }}
                             className=" p-5 lg:p-8 feature-card   relative transition-all duration-300 relative top-0 hover:top-[-6px]"
                         >
-                            <span className="text-stroke w-16  h-16 bg-[#F6F6F6] hidden md:flex items-center justify-center rounded-full p-3">
+                            <span className="text-stroke w-18  h-18 bg-[#F6F6F6] hidden md:flex items-center justify-center rounded-full p-3">
                                 {feature.icon}
                             </span>
 
@@ -112,7 +112,7 @@ export default function Features() {
                                 <span className="text-stroke w-13 h-13 bg-[#F6F6F6] flex md:hidden items-center justify-center rounded-full p-3">
                                     {feature.icon}
                                 </span>
-                                <h3 className="text-[18px] md:text-[20px] font-semibold md:my-3 my-1">{feature.title}</h3>
+                                <h3 className="text-[18px] font-semibold md:my-3 my-1">{feature.title}</h3>
                             </div>
                             <p className="text-sm  leading-snug">
                                 {feature.description}

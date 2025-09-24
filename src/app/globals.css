@@ -97,8 +97,8 @@ body {
 
 .header-top-social:before {
   content: "";
-  background: var(--color);
-  width: 1px;
+  background: #dddddd;
+  width: .1rem;
   height: 110%;
   position: absolute;
   top: -2px;
@@ -224,12 +224,16 @@ body {
 
 }
 
+.button:hover .button-text {
+
+  transform: scale(.97);
+
+}
 .button:hover .button-outline {
 
   transform: scale(1.03);
 
 }
-
 .reverse-flex .button-text {
   flex-direction: row-reverse;
 }
@@ -254,34 +258,6 @@ body {
 
 /* button style end */
 
-@keyframes shuffle {
-
-  0%,
-  100% {
-    transform: translateY(0) rotate(0);
-  }
-
-  25% {
-    transform: translateY(-2.2px) rotate(-1.5deg);
-  }
-
-  50% {
-    transform: translateY(2.2px) rotate(1.5deg);
-  }
-
-  75% {
-    transform: translateY(-1.2px) rotate(-1.5deg);
-  }
-}
-
-
-.shuffle {
-  animation: shuffle 4s infinite ease-in-out;
-}
-
-.hero .swiper-slide {
-  height: auto;
-}
 
 .marquee-img {
   position: relative;
@@ -298,29 +274,8 @@ body {
   opacity: .5;
 }
 
-.swiper-button-next,
-.swiper-rtl .swiper-button-prev {
-  right: var(--swiper-navigation-sides-offset, 10px);
-  left: auto;
-}
 
-.hero .swiper-button-prev,
-.hero .swiper-button-next {
-  background: rgba(3, 3, 3, 0.156);
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  backdrop-filter: blur(5);
-}
 
-.hero .swiper-button-prev:after,
-.hero .swiper-button-next:after {
-  font-size: 22px;
-  color: white;
-}
 
 .feature-card:not(:first-child):before {
   content: "";
@@ -365,6 +320,12 @@ body {
 .active-service svg path{
   fill: white;
 }
+.social-icon2{
+  transition:  .3s;
+}
+.social-icon2:hover{
+  margin-top: -4px;
+}
 @media (max-width: 990px) {
   .bg-nav-cover {
     top: 0px;
@@ -373,11 +334,6 @@ body {
 
 @media (max-width: 600px) {
 
-
-  .hero .swiper-button-prev,
-  .hero .swiper-button-next {
-    display: none;
-  }
 
   .hero-cover2::before {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.827), rgba(30, 21, 195, 0.347));

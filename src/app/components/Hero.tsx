@@ -37,7 +37,7 @@ const Hero3 = () => {
                                 with personalized advice to turn your business dream into reality.
                             </p>
                             <div className="mt-5">
-                                <div className='shuffle'><AnimatedButton href="" label="Talk with Us" className="w-fit transparent-btn" imgOrSvg={<img src="/whatsapp.png" alt="Icon" className="w-6" />} /></div>
+                               <AnimatedButton href="" label="Talk with Us" className="w-fit transparent-btn" imgOrSvg={<img src="/whatsapp.png" alt="Icon" className="w-6" />} />
                             </div>
 
 

@@ -21,24 +21,157 @@ export default function CostCalculator() {
                                 </p>
                                 <form className="space-y-5 calculator-form" onSubmit={e => e.preventDefault()}>
                                     <div className="grid sm:grid-cols-2 gap-4">
-                                        <select className="bg-[var(--blue1)] text-white rounded-xl p-4 w-full focus:outline-none">
-                                            <option>Choose your Business Activity</option>
-                                        </select>
-                                        <select className="bg-[var(--blue1)] text-white rounded-xl p-4 w-full focus:outline-none">
-                                            <option>What Premises You Require?</option>
-                                        </select>
-                                        <select className="bg-[var(--blue1)] text-white rounded-xl p-4 w-full focus:outline-none">
-                                            <option>No. of Visas Required</option>
-                                        </select>
-                                        <select className="bg-[var(--blue1)] text-white rounded-xl p-4 w-full focus:outline-none">
-                                            <option>No. of Owners</option>
-                                        </select>
-                                    </div>
-                                    <select className="bg-[var(--blue1)] text-white rounded-xl p-4 w-full focus:outline-none">
-                                        <option>Choose Your Jurisdiction</option>
-                                    </select>
+                                        <div className="relative">
+                                            <select className="appearance-none bg-[var(--blue1)] text-white rounded-xl p-4 w-full focus:outline-none">
+                                                <option value="" >Choose your Business Activity</option>
+                                                <option value="Accounting &amp; Auditing" aria-selected="false">Accounting &amp; Auditing</option>
+                                                <option value="Advertising" aria-selected="false">Advertising</option>
+                                                <option value="Automobile Trading" aria-selected="false">Automobile Trading</option>
+                                                <option value="Aviation Consultancy" aria-selected="false">Aviation Consultancy</option>
+                                                <option value="Business Consultancy" aria-selected="false">Business Consultancy</option>
+                                                <option value="Cleaning Services" aria-selected="false">Cleaning Services</option>
+                                                <option value="Creative Arts" aria-selected="false">Creative Arts</option>
+                                                <option value="Entetaining Activities" aria-selected="false">Entetaining Activities</option>
+                                                <option value="Delivery Service" aria-selected="false">Delivery Service</option>
+                                                <option value="Digital Marketing" aria-selected="false">Digital Marketing</option>
+                                                <option value="E-Commerce" aria-selected="false">E-Commerce</option>
+                                                <option value="Educational Sport Activities" aria-selected="false">Educational Sport Activities</option>
+                                                <option value="Engineering Consultancy" aria-selected="false">Engineering Consultancy</option>
+                                                <option value="Event Management" aria-selected="false">Event Management</option>
+                                                <option value="Food Trading" aria-selected="false">Food Trading</option>
+                                                <option value="General Trading" aria-selected="false">General Trading</option>
+                                                <option value="Holding Company" aria-selected="false">Holding Company</option>
+                                                <option value="Hospitality Management" aria-selected="false">Hospitality Management</option>
+                                                <option value="HR Conusltancy" aria-selected="false">HR Conusltancy</option>
+                                                <option value="Interior Design Consultancy" aria-selected="false">Interior Design Consultancy</option>
+                                                <option value="IT Condultancy" aria-selected="false">IT Condultancy</option>
+                                                <option value="IT Trading" aria-selected="false">IT Trading</option>
+                                                <option value="Legal Consultanyc" aria-selected="false">Legal Consultanyc</option>
+                                                <option value="Logistics Consultancy" aria-selected="false">Logistics Consultancy</option>
+                                                <option value="Maintanance" aria-selected="false">Maintanance</option>
+                                                <option value="Management Consultancy" aria-selected="false">Management Consultancy</option>
+                                                <option value="Media" aria-selected="false">Media</option>
+                                                <option value="Perfumes &amp; Cosmetics Trading" aria-selected="false">Perfumes &amp; Cosmetics Trading</option>
+                                                <option value="Photography" aria-selected="false">Photography</option>
+                                                <option value="PR Services" aria-selected="false">PR Services</option>
+                                                <option value="Project Management" aria-selected="false">Project Management</option>
+                                                <option value="Raw Material trading" aria-selected="false">Raw Material trading</option>
+                                                <option value="Real Estate" aria-selected="false">Real Estate</option>
+                                                <option value="Cafes / Cloud Kitchen" aria-selected="false">Restaurant</option>
+                                                <option value="Retail Outlets /Shops" aria-selected="false">Retail Outlets /Shops</option>
+                                                <option value="Saloon" aria-selected="false">Saloon</option>
+                                                <option value="Software Publishing" aria-selected="false">Software Publishing</option>
+                                                <option value="Sports Management" aria-selected="false">Sports Management</option>
+                                                <option value="Technical Consultancy" aria-selected="false">Technical Consultancy</option>
+                                                <option value="Technical Services" aria-selected="false">Technical Services</option>
+                                                <option value="Textile Trading" aria-selected="false">Textile Trading</option>
+                                                <option value="Tourism &amp; Recreation" aria-selected="false">Tourism &amp; Recreation</option>
+                                                <option value="Videography" aria-selected="false">Videography</option>
 
-                                    <AnimatedButton type="button" onClick={() => setShowForm(true)}  label="Calculate Now" className="w-full text-white lg:mt-2" />
+
+
+                                            </select>
+                                            <span className="pointer-events-none absolute right-4 top-1/2 transform -translate-y-1/2 text-white">
+                                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fillRule="evenodd" clipRule="evenodd" d="M13.5019 15.7376C13.3144 15.9251 13.0601 16.0304 12.7949 16.0304C12.5297 16.0304 12.2754 15.9251 12.0879 15.7376L6.4309 10.0806C6.33539 9.98837 6.25921 9.87803 6.2068 9.75602C6.15439 9.63402 6.1268 9.5028 6.12565 9.37002C6.12449 9.23724 6.1498 9.10556 6.20008 8.98266C6.25036 8.85977 6.32461 8.74811 6.4185 8.65422C6.5124 8.56033 6.62405 8.48608 6.74694 8.43579C6.86984 8.38551 7.00152 8.36021 7.1343 8.36137C7.26708 8.36252 7.3983 8.39011 7.5203 8.44251C7.64231 8.49492 7.75265 8.57111 7.8449 8.66662L12.7949 13.6166L17.7449 8.66662C17.9335 8.48446 18.1861 8.38366 18.4483 8.38594C18.7105 8.38822 18.9613 8.49339 19.1467 8.6788C19.3321 8.86421 19.4373 9.11502 19.4396 9.37722C19.4419 9.63941 19.3411 9.89201 19.1589 10.0806L13.5019 15.7376Z" fill="white" />
+                                                </svg>
+
+                                            </span>
+                                        </div>
+
+                                        <div className="relative">
+                                            <select className="appearance-none bg-[var(--blue1)] text-white rounded-xl p-4 w-full focus:outline-none">
+                                                <option>What Premises You Require?</option>
+                                                <option value="Photography" aria-selected="false">Photography</option>
+                                                <option value="PR Services" aria-selected="false">PR Services</option>
+                                                <option value="Project Management" aria-selected="false">Project Management</option>
+                                                <option value="Raw Material trading" aria-selected="false">Raw Material trading</option>
+                                                <option value="Real Estate" aria-selected="false">Real Estate</option>
+                                                <option value="Cafes / Cloud Kitchen" aria-selected="false">Restaurant</option>
+                                                <option value="Retail Outlets /Shops" aria-selected="false">Retail Outlets /Shops</option>
+                                                <option value="Saloon" aria-selected="false">Saloon</option>
+                                                <option value="Software Publishing" aria-selected="false">Software Publishing</option>
+                                                <option value="Sports Management" aria-selected="false">Sports Management</option>
+                                                <option value="Technical Consultancy" aria-selected="false">Technical Consultancy</option>
+                                                <option value="Technical Services" aria-selected="false">Technical Services</option>
+                                                <option value="Textile Trading" aria-selected="false">Textile Trading</option>
+                                                <option value="Tourism & Recreation" aria-selected="false">Tourism & Recreation</option>
+                                                <option value="Videography" aria-selected="false">Videography</option>
+
+                                            </select>
+                                            <span className="pointer-events-none absolute right-4 top-1/2 transform -translate-y-1/2 text-white">
+                                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fillRule="evenodd" clipRule="evenodd" d="M13.5019 15.7376C13.3144 15.9251 13.0601 16.0304 12.7949 16.0304C12.5297 16.0304 12.2754 15.9251 12.0879 15.7376L6.4309 10.0806C6.33539 9.98837 6.25921 9.87803 6.2068 9.75602C6.15439 9.63402 6.1268 9.5028 6.12565 9.37002C6.12449 9.23724 6.1498 9.10556 6.20008 8.98266C6.25036 8.85977 6.32461 8.74811 6.4185 8.65422C6.5124 8.56033 6.62405 8.48608 6.74694 8.43579C6.86984 8.38551 7.00152 8.36021 7.1343 8.36137C7.26708 8.36252 7.3983 8.39011 7.5203 8.44251C7.64231 8.49492 7.75265 8.57111 7.8449 8.66662L12.7949 13.6166L17.7449 8.66662C17.9335 8.48446 18.1861 8.38366 18.4483 8.38594C18.7105 8.38822 18.9613 8.49339 19.1467 8.6788C19.3321 8.86421 19.4373 9.11502 19.4396 9.37722C19.4419 9.63941 19.3411 9.89201 19.1589 10.0806L13.5019 15.7376Z" fill="white" />
+                                                </svg>
+
+                                            </span>
+                                        </div>
+
+                                        <div className="relative">
+                                            <select className="appearance-none bg-[var(--blue1)] text-white rounded-xl p-4 w-full focus:outline-none">
+                                                <option value="">No. of Visas Required</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="More than 10">More than 10</option>
+                                            </select>
+                                            <span className="pointer-events-none absolute right-4 top-1/2 transform -translate-y-1/2 text-white">
+                                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fillRule="evenodd" clipRule="evenodd" d="M13.5019 15.7376C13.3144 15.9251 13.0601 16.0304 12.7949 16.0304C12.5297 16.0304 12.2754 15.9251 12.0879 15.7376L6.4309 10.0806C6.33539 9.98837 6.25921 9.87803 6.2068 9.75602C6.15439 9.63402 6.1268 9.5028 6.12565 9.37002C6.12449 9.23724 6.1498 9.10556 6.20008 8.98266C6.25036 8.85977 6.32461 8.74811 6.4185 8.65422C6.5124 8.56033 6.62405 8.48608 6.74694 8.43579C6.86984 8.38551 7.00152 8.36021 7.1343 8.36137C7.26708 8.36252 7.3983 8.39011 7.5203 8.44251C7.64231 8.49492 7.75265 8.57111 7.8449 8.66662L12.7949 13.6166L17.7449 8.66662C17.9335 8.48446 18.1861 8.38366 18.4483 8.38594C18.7105 8.38822 18.9613 8.49339 19.1467 8.6788C19.3321 8.86421 19.4373 9.11502 19.4396 9.37722C19.4419 9.63941 19.3411 9.89201 19.1589 10.0806L13.5019 15.7376Z" fill="white" />
+                                                </svg>
+
+                                            </span>
+                                        </div>
+
+                                        <div className="relative">
+                                            <select className="appearance-none bg-[var(--blue1)] text-white rounded-xl p-4 w-full focus:outline-none">
+                                                <option>No. of Owners</option>
+
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="More than 10">More than 10</option>
+                                            </select>
+                                            <span className="pointer-events-none absolute right-4 top-1/2 transform -translate-y-1/2 text-white">
+                                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fillRule="evenodd" clipRule="evenodd" d="M13.5019 15.7376C13.3144 15.9251 13.0601 16.0304 12.7949 16.0304C12.5297 16.0304 12.2754 15.9251 12.0879 15.7376L6.4309 10.0806C6.33539 9.98837 6.25921 9.87803 6.2068 9.75602C6.15439 9.63402 6.1268 9.5028 6.12565 9.37002C6.12449 9.23724 6.1498 9.10556 6.20008 8.98266C6.25036 8.85977 6.32461 8.74811 6.4185 8.65422C6.5124 8.56033 6.62405 8.48608 6.74694 8.43579C6.86984 8.38551 7.00152 8.36021 7.1343 8.36137C7.26708 8.36252 7.3983 8.39011 7.5203 8.44251C7.64231 8.49492 7.75265 8.57111 7.8449 8.66662L12.7949 13.6166L17.7449 8.66662C17.9335 8.48446 18.1861 8.38366 18.4483 8.38594C18.7105 8.38822 18.9613 8.49339 19.1467 8.6788C19.3321 8.86421 19.4373 9.11502 19.4396 9.37722C19.4419 9.63941 19.3411 9.89201 19.1589 10.0806L13.5019 15.7376Z" fill="white" />
+                                                </svg>
+
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div className="relative">
+                                        <select className="appearance-none bg-[var(--blue1)] text-white rounded-xl p-4 w-full focus:outline-none">
+                                            <option>Choose Your Jurisdiction</option>
+                                            <option>Mainland</option>
+                                            <option>Freezone</option>
+                                            <option>Offshore</option>
+
+                                        </select>
+                                        <span className="pointer-events-none absolute right-4 top-1/2 transform -translate-y-1/2 text-white">
+                                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fillRule="evenodd" clipRule="evenodd" d="M13.5019 15.7376C13.3144 15.9251 13.0601 16.0304 12.7949 16.0304C12.5297 16.0304 12.2754 15.9251 12.0879 15.7376L6.4309 10.0806C6.33539 9.98837 6.25921 9.87803 6.2068 9.75602C6.15439 9.63402 6.1268 9.5028 6.12565 9.37002C6.12449 9.23724 6.1498 9.10556 6.20008 8.98266C6.25036 8.85977 6.32461 8.74811 6.4185 8.65422C6.5124 8.56033 6.62405 8.48608 6.74694 8.43579C6.86984 8.38551 7.00152 8.36021 7.1343 8.36137C7.26708 8.36252 7.3983 8.39011 7.5203 8.44251C7.64231 8.49492 7.75265 8.57111 7.8449 8.66662L12.7949 13.6166L17.7449 8.66662C17.9335 8.48446 18.1861 8.38366 18.4483 8.38594C18.7105 8.38822 18.9613 8.49339 19.1467 8.6788C19.3321 8.86421 19.4373 9.11502 19.4396 9.37722C19.4419 9.63941 19.3411 9.89201 19.1589 10.0806L13.5019 15.7376Z" fill="white" />
+                                            </svg>
+
+                                        </span>
+                                    </div>
+
+
+                                    <AnimatedButton type="button" onClick={() => setShowForm(true)} label="Calculate Now" className="w-full text-white lg:mt-2" />
                                 </form>
                             </>
                         ) : (
@@ -54,13 +187,13 @@ export default function CostCalculator() {
                                 <form className="space-y-4">
                                     <div className="grid sm:grid-cols-2 gap-4">
                                         <input type="text" placeholder="First Name" className="bg-[var(--blue1)] text-white rounded-xl px-4 py-3 w-full focus:outline-none" />
-                                        <input type="text" placeholder="Second Name" className="bg-[var(--blue1)] text-white rounded-xl px-4 py-3 w-full focus:outline-none" />
+                                        <input type="text" placeholder="Second Name (optional)" className="bg-[var(--blue1)] text-white rounded-xl px-4 py-3 w-full focus:outline-none" />
                                         <input type="tel" placeholder="Phone Number" className="bg-[var(--blue1)] text-white rounded-xl px-4 py-3 w-full focus:outline-none" />
-                                        <input type="email" placeholder="Email" className="bg-[var(--blue1)] text-white rounded-xl px-4 py-3 w-full focus:outline-none" />
+                                        <input type="email" placeholder="Email (optional)" className="bg-[var(--blue1)] text-white rounded-xl px-4 py-3 w-full focus:outline-none" />
                                     </div>
                                     <textarea placeholder="Message" rows={4} className="bg-[var(--blue1)] text-white rounded-xl px-4 py-3 w-full focus:outline-none"></textarea>
 
-                                    <AnimatedButton   label="Submit" className="w-full text-white lg:mt-2" />
+                                    <AnimatedButton label="Submit" className="w-full text-white lg:mt-2" />
 
                                 </form>
                             </>
