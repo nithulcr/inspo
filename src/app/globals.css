@@ -106,6 +106,7 @@ body {
 
 .bg-nav {
   transition: .3s;
+  box-shadow: 0 0 10px 5px #bfbfbf1e;
 }
 
 .bg-nav-cover {
@@ -321,7 +322,13 @@ body {
 .calculator-form select{
   font-size: 13px;
 }
+@media (max-width: 990px) {
+  .bg-nav-cover {
+  top: 0px;
+}
+}
 @media (max-width: 600px) {
+  
 
   .hero .swiper-button-prev,
   .hero .swiper-button-next {

@@ -66,7 +66,7 @@ export default function Testimonials() {
         <section className="bg-[var(--blue)] testimonials-section overflow-hidden relative lg:py-30 py-14 text-white">
             <div className="mx-auto  max-w-[1320px] lg:pl-6  flex flex-col items-center justify-center">
                 <div className="max-w-[640px] mx-auto mb-8">
-                    <h2 className="text-2xl lg:text-[44px] font-medium  text-center">
+                    <h2 className="text-2xl lg:text-[40px] font-medium  text-center">
                         <span className='font-light2'>Read Reviews,</span><br></br>
                         Ride with Confidence
                     </h2>

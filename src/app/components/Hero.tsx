@@ -8,7 +8,7 @@ import Image from "next/image";
 const Hero3 = () => {
     return (
         <>
-            <section className="w-full md:min-h-[90vh] bg-[var(--blue)] text-white flex flex-col justify-center items-center px-6 relative mt-[60px] lg:mt-[100px] lg:pb-[60px]">
+            <section className="w-full md:min-h-[90vh] bg-[var(--blue)] text-white flex flex-col justify-center items-center px-6 relative mt-[70px] lg:mt-[100px] lg:pb-[70px]">
                 {/* Background pattern */}
                 <div className="absolute hero-cover inset-0  bg-cover bg-center">
                     <video
@@ -21,17 +21,17 @@ const Hero3 = () => {
                     />
                 </div>
 
-                <div className="grid lg:grid-cols-2 gap-5 ">
+                <div className="max-w-[1320px] grid lg:grid-cols-2 gap-5 ">
                     <div>
                         <motion.div initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5 }} className="relative z-10 max-w-3xl py-20 lg:pt-40 lg:pb-0 max-w-[700px] lg:px-6">
 
 
-                            <h2 className="text-4xl lg:text-[40px] xl:text-[54px] font-bold mb-1 leading-snug">
+                            <h1 className="text-4xl lg:text-[36px] xl:text-[48px] font-bold mb-1 leading-tight">
                                 Simplify Business Setup
                                 in Dubai With INSPO
-                            </h2>
+                            </h1>
                             <p className="text-md md:text-lg font-light2">
                                 Business Consultants in Dubai who genuinely care, guiding you step by step
                                 with personalized advice to turn your business dream into reality.

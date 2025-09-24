@@ -8,7 +8,7 @@ export default function AboutUs() {
 
   return (
 
-    <section dir="ltr" className="pt-10 pb-15 lg:pt-20 lg:pb-30  text-left">
+    <section  className="pt-10 pb-15 lg:pt-20 lg:pb-30">
       <div className="max-w-[1100px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-center">
         <div className="relative flex justify-center  lg:flex h-full">
 
@@ -23,7 +23,7 @@ export default function AboutUs() {
         </div>
         <div className="flex flex-col gap-4 lg:gap-6 ">
           
-          <h2 className="text-2xl lg:text-[44px] font-medium leading-tight">Consulting Services
+          <h2 className="text-2xl lg:text-[40px] font-medium leading-tight">Consulting Services
             Empo-wering Your
             Business for Success.</h2>
           <p className="leading-relaxed text-[#A7A9AC]">

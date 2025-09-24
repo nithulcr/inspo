@@ -67,7 +67,7 @@ export default function UaeCompanyCards() {
         <section className="bg-white py-18 lg:py-26">
             <div className="max-w-[1320px] mx-auto  px-6">
                 <div className="max-w-[640px] mx-auto mb-8 lg:mb-18">
-                    <h2 className="text-2xl lg:text-[50px] font-semibold leading-tight text-center mb-3">
+                    <h2 className="text-2xl lg:text-[40px] font-semibold leading-tight text-center mb-3 max-w-xl">
                         Establish your company  in the UAE today
                     </h2>
                     <p className="text-gray-400 text-sm md:text-base max-w-2xl mx-auto text-center">

@@ -54,7 +54,7 @@ function InfiniteMarquee({ speed = 200, children }: { speed?: number; children: 
 export default function InfiniteMarqueeExample() {
   return (
     <div className="pb-10">
-      <h2 className="text-2xl lg:text-[44px] font-medium  max-w-[1320px] px-6 text-center mb-8 lg:mb-15 mx-auto">Your Gateway to Government Success</h2>
+      <h2 className="text-2xl lg:text-[40px] font-medium  max-w-[1320px] px-6 text-center mb-8 lg:mb-15 mx-auto">Your Gateway to Government Success</h2>
       <InfiniteMarquee speed={30}>
         <div className="flex items-center gap-12 px-4">
           {images.map((src, i) => (

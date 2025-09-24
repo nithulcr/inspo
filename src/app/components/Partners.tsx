@@ -59,7 +59,7 @@ const Partners = () => {
     <section className="py-10 lg:py-16 text-[var(--foreground)]">
       <div className="max-w-[1320px] mx-auto px-6 flex  flex-col items-start  gap-5 justify-between mb-10">
         <div className="w-full">
-          <h2 className="text-2xl lg:text-[44px] font-medium mb-3 max-w-[560px]">Empowering Success with
+          <h2 className="text-2xl lg:text-[40px] font-medium mb-3 max-w-[560px]">Empowering Success with
             Top One&apos;s Expertise.</h2>
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <p className="max-w-[560px] ">

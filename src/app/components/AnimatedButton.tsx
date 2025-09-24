@@ -10,6 +10,7 @@ type AnimatedButtonProps = {
   href?: string;
   type?: "button" | "submit" | "reset";
   imgOrSvg?: React.ReactNode;
+  disabled?: string;
 };
 
 export default function AnimatedButton({
@@ -19,6 +20,7 @@ export default function AnimatedButton({
   href,
   type,
   imgOrSvg,
+  disabled,
 }: AnimatedButtonProps) {
   const buttonRef = useRef<HTMLAnchorElement | HTMLButtonElement>(null);
   const outlineRef = useRef<HTMLDivElement>(null);
@@ -63,6 +65,7 @@ export default function AnimatedButton({
       <button
         ref={buttonRef as React.RefObject<HTMLButtonElement>}
         onClick={onClick}
+        disabled={Boolean(disabled)}
         type={type}
         className={clsx("button", className)}
       >
