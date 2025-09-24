@@ -23,7 +23,7 @@ export default function ServiceTabs({ current }: { current: string }) {
                 <div className="flex items-center flex-wrap gap-3 ">
                     {services.map((service) => (
                         <Link key={service.href} href={service.href}
-                            className={`px-4 py-3 rounded-[10px] flex items-center text-sm lg:text-[16px] gap-2 justify-between w-full ${service.href === current ? 'bg-[var(--blue1)] active-service  text-white ' : 'bg-[#e5ecff]'}`}
+                            className={`px-4 py-3 rounded-[10px] flex items-center text-sm lg:text-[16px] gap-2 justify-between w-full ${service.href === current ? 'bg-[var(--blue1)] active-service  text-white ' : 'bg-white'}`}
                         >
                             {service.label}
                             <svg width="24" height="24" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" >

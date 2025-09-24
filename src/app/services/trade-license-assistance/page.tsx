@@ -52,7 +52,7 @@ export default function TradeLicenseAssistance() {
         <div className="max-w-[1320px] mx-auto px-6  grid lg:grid-cols-3 z-1 gap-6 relative">
           <div className='flex flex-col gap-6 lg:gap-12 lg:col-span-2'>
             <div>
-              <h1 className='text-3xl lg:text-[36px] xl:text-[48px] font-bold mb-1 leading-tight max-w-[500px]'>Smart and effective business agency.</h1>
+              <h1 className='text-3xl lg:text-[36px] xl:text-[48px] font-bold mb-1 leading-tight max-w-[500px] mb-2'>Smart and effective business agency.</h1>
               <p className='max-w-[500px]'>With a team of experienced professionals and a passion for innovation, we combine cutting-edge strategies</p>
             </div>
             <Image
