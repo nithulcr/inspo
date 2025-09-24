@@ -5,9 +5,16 @@ import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/navigation';
 import { useRef, useState, useEffect } from 'react';
+import type { SwiperOptions } from 'swiper/types';
 import AnimatedButton from "./AnimatedButton";
 
-
+interface Testimonial {
+  name: string;
+  role: string;
+  rating: number;
+  review: string;
+  avatar: string;
+}
 
 // Example avatars (replace src paths with your actual assets)
 const testimonialsItems = [
@@ -99,7 +106,7 @@ export default function Testimonials() {
                             navigation={{
                                 prevEl: prevRef.current,
                                 nextEl: nextRef.current,
-                            } as any}
+                            } as SwiperOptions['navigation']}
                             onBeforeInit={(swiper) => {
                                 if (swiper.params.navigation && typeof swiper.params.navigation !== 'boolean') {
                                     swiper.params.navigation.prevEl = prevRef.current;
