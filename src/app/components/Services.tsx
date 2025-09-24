@@ -211,10 +211,10 @@ const Services = () => {
                 {choose.icon}
               </div>
 
-              <h3 className="text-sm md:text-xl leading-tight font-semibold text-center mt-2">{choose.title}</h3>
+              <h3 className="text-md md:text-xl leading-tight font-semibold text-center mt-2">{choose.title}</h3>
 
               {/* Description */}
-              <p className="text-xs sm:text-sm mt-2">{choose.description}</p>
+              <p className="text-xs sm:text-sm lg:mt-2 hidden md:block">{choose.description}</p>
               <a href={choose.link} className="text-xs sm:text-sm leading-snug mt-5 flex items-center gap-2 justify-center">Learn More
                 <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11.9472 8.46255H2.65417C2.52157 8.46255 2.39439 8.51522 2.30062 8.60899C2.20685 8.70276 2.15417 8.82994 2.15417 8.96255C2.15417 9.09515 2.20685 9.22233 2.30062 9.3161C2.39439 9.40987 2.52157 9.46255 2.65417 9.46255H11.9472L8.30017 13.1085C8.20629 13.2024 8.15354 13.3298 8.15354 13.4625C8.15354 13.5953 8.20629 13.7227 8.30017 13.8165C8.39406 13.9104 8.5214 13.9632 8.65417 13.9632C8.78695 13.9632 8.91429 13.9104 9.00817 13.8165L13.5082 9.31655C13.5547 9.2701 13.5917 9.21492 13.6169 9.15418C13.6421 9.09343 13.6551 9.02831 13.6551 8.96255C13.6551 8.89678 13.6421 8.83166 13.6169 8.77091C13.5917 8.71017 13.5547 8.65499 13.5082 8.60855L9.00817 4.10855C8.91429 4.01466 8.78695 3.96191 8.65417 3.96191C8.5214 3.96191 8.39406 4.01466 8.30017 4.10855C8.20629 4.20243 8.15354 4.32977 8.15354 4.46255C8.15354 4.59532 8.20629 4.72266 8.30017 4.81655L11.9472 8.46255Z" fill="black" />

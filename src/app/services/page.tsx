@@ -1,3 +1,4 @@
+
 import { Metadata, ResolvingMetadata } from 'next';
 
 
@@ -31,7 +32,7 @@ import Footer from "../components/Footer";
 
 
 
-export default function Home() {
+export default function Services() {
     return (
         <>
             <Header />

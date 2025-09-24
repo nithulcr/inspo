@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 :root {
   --background: #ffffff;
   --foreground: #000;
@@ -89,18 +90,20 @@ body {
   right: -1px;
 
 }
-.header-top-social{
+
+.header-top-social {
   padding-left: 30px;
 }
+
 .header-top-social:before {
-    content: "";
-    background: var(--color);
-    width: 1px;
-    height: 110%;
-    position: absolute;
-    top: -2px;
-    left: 0;
-    transform: rotate(25deg);
+  content: "";
+  background: var(--color);
+  width: 1px;
+  height: 110%;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  transform: rotate(25deg);
 }
 
 
@@ -111,6 +114,14 @@ body {
 
 .bg-nav-cover {
   top: -37px;
+}
+
+.main-header {
+  transition: .3s;
+}
+
+.bg-nav-cover .main-header {
+  height: 70px;
 }
 
 .menu-item {
@@ -219,7 +230,7 @@ body {
 
 }
 
-.reverse-flex .button-text{
+.reverse-flex .button-text {
   flex-direction: row-reverse;
 }
 
@@ -272,10 +283,11 @@ body {
   height: auto;
 }
 
-.marquee-img{
+.marquee-img {
   position: relative;
 }
-.marquee-img::before{
+
+.marquee-img::before {
   content: "";
   width: 1px;
   height: 100%;
@@ -285,6 +297,7 @@ body {
   left: -25px;
   opacity: .5;
 }
+
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
   right: var(--swiper-navigation-sides-offset, 10px);
@@ -310,25 +323,56 @@ body {
 }
 
 .feature-card:not(:first-child):before {
-    content: "";
-    background: linear-gradient(45deg, #ffffff00, #646464, #ffffff00);
-    width: .05rem;
-    height: 50%;
-    position: absolute;
-    top: 65%;
-    left: 0;
-    transform: translateY(-50%);
+  content: "";
+  background: linear-gradient(45deg, #ffffff00, #646464, #ffffff00);
+  width: .05rem;
+  height: 50%;
+  position: absolute;
+  top: 65%;
+  left: 0;
+  transform: translateY(-50%);
 }
-.calculator-form select{
+
+.calculator-form select {
   font-size: 13px;
+}
+
+.service-shape {
+  background: #F6F6F6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 450px;
+}
+
+.service-shape div:before {
+  content: '';
+  background: url(/service-shape.png);
+  background-size: 600px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  position: absolute;
+  top: 0;
+  left: 25px;
+  width: 100%;
+  height: 700px;
+  max-height: 100%;
+  max-width: calc(100% - 50px);
+  max-width: 70%;
+
+}
+.active-service svg path{
+  fill: white;
 }
 @media (max-width: 990px) {
   .bg-nav-cover {
-  top: 0px;
+    top: 0px;
+  }
 }
-}
+
 @media (max-width: 600px) {
-  
+
 
   .hero .swiper-button-prev,
   .hero .swiper-button-next {
@@ -339,5 +383,9 @@ body {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.827), rgba(30, 21, 195, 0.347));
 
 
+  }
+
+  .service-shape {
+    height: 320px;
   }
 }

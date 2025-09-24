@@ -34,7 +34,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <section className="py-14 lg:py-20    mt-[7] lg:mt-[100px] bg-[#F6F6F6]">
+      <section className="py-14 lg:py-20    mt-[70] lg:mt-[100px] bg-[#F6F6F6]">
         <div className="max-w-[1320px] mx-auto px-6 flex flex-col gap-6 lg:gap-12">
           <div>
             <span className='text-[#5D666F]'>About inspo</span>
