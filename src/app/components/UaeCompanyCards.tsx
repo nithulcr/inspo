@@ -82,13 +82,13 @@ export default function UaeCompanyCards() {
                                 alt={card.title}
                                 className="w-full rounded-2xl h-auto object-cover"
                             />
-                            <div className="flex flex-col flex-1 p-6 lg:p-8">
-                                <h3 className="font-bold mb-2 text-lg lg:text-2xl min-h-[50px]">{card.title}</h3>
-                                <span className="text-md text-[var(--blue)] mb-1">Starting from Just</span>
+                            <div className="flex flex-col flex-1 p-5 lg:p-8">
+                                <h3 className="font-bold mb-2 text-lg lg:text-2xl min-h-[44px]">{card.title}</h3>
+                                <span className="text-[14px] lg:text-[16px] text-[var(--blue)] mb-1">Starting from Just</span>
                                 <span className="font-extrabold text-2xl lg:text-4xl mb-2">{card.price}</span>
-                                <span className="text-gray-500 text-md mb-4">{card.description}</span>
-                                <div className="border-t border-gray-400 pt-6 mt-3">
-                                    <span className="font-bold text-xl mb-4 block ">
+                                <span className="text-gray-500 text-[14px] lg:text-[16px] mb-4">{card.description}</span>
+                                <div className="border-t border-gray-400 pt-3 lg:pt-6 lg:mt-3">
+                                    <span className="font-bold text-lg lg:text-xl mb-4 block ">
                                         What it Includes?
                                     </span>
                                     <ul className="mb-2">
@@ -104,7 +104,7 @@ export default function UaeCompanyCards() {
                                                     </g>
                                                 </svg>
 
-                                                <span >
+                                                <span className="text-[14px] lg:text-[16px]">
                                                     {feature}
 
                                                 </span>
@@ -113,7 +113,7 @@ export default function UaeCompanyCards() {
                                     </ul>
                                 </div>
 
-                                <AnimatedButton href={card.link} label="Contact sales" className="w-full text-white mt-6 mx-auto" />
+                                <AnimatedButton href={card.link} label="Contact sales" className="w-full text-white mt-2 lg:mt-6 mx-auto" />
                             </div>
                         </div>
                     ))}

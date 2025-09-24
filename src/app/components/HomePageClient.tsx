@@ -15,7 +15,7 @@ import UaeCompanyCards from "./UaeCompanyCards";
 
 
 import Testimonials from "./Testimonials";
-import ContactUs from "./ContactUs";
+import CostCalculator from "./CostCalculator";
 
 
 
@@ -67,16 +67,16 @@ export default function HomePageClient() {
           <UaeCompanyCards />
           <Testimonials />
 
-<Partners />
- <ContactUs />
+          <Partners />
+          <CostCalculator />
 
 
 
 
-         
 
 
-          
+
+
           <Footer />
         </>
       )}

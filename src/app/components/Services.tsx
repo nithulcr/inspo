@@ -182,7 +182,7 @@ const Services = () => {
   const data = ServicesDataEn;
 
   return (
-    <section className="py-18 lg:py-28">
+    <section className="py-14 lg:py-28">
       <div className="max-w-[1320px] mx-auto px-6">
         <div className="mb-8  lg:mb-14">
 
@@ -221,7 +221,7 @@ const Services = () => {
             </div>
           ))}
         </div>
-        <AnimatedButton href="" label="Explore More" className="w-fit text-white mt-14 lg:mt-20 mx-auto" />
+        <AnimatedButton href="" label="Explore More" className="w-fit text-white mt-6 lg:mt-14 lg:mt-20 mx-auto" />
       </div>
     </section>
   );

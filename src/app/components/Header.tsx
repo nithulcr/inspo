@@ -55,7 +55,7 @@ export default function Header() {
     }, []);
 
     const headerClass = [
-        "content-center bg-white w-full fixed top-0 left-0 z-50 transition-colors duration-300 bg-nav",
+        "content-center  w-full fixed top-0 left-0 z-50 transition-colors duration-300 bg-nav",
         scrolled ? "bg-nav-cover" : ""
     ].filter(Boolean).join(" ");
 
@@ -109,7 +109,7 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-            <div className="max-w-[1320px] mx-auto flex items-center justify-between px-6 h-[72px] z-10 relative">
+            <div className="max-w-[1320px] mx-auto flex items-center justify-between px-6 h-[72px] z-10 relative bg-white">
                 <div className="text-2xl font-bold h-full align-content-center flex">
                     <Link href="/" className="items-center flex">
                         <img src="/logo.png" alt="Logo" width={120} height={50} className="w-[100px] lg:w-[120px]" />

@@ -318,7 +318,9 @@ body {
     left: 0;
     transform: translateY(-50%);
 }
-
+.calculator-form select{
+  font-size: 13px;
+}
 @media (max-width: 600px) {
 
   .hero .swiper-button-prev,
