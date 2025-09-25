@@ -3,7 +3,7 @@ import Link from "next/link";
 import AnimatedButton from "./AnimatedButton";
 
 
-const ServicesDataEn = [
+const ServicesFullDataEn = [
   {
     id: "01",
     icon: (
@@ -23,7 +23,7 @@ const ServicesDataEn = [
     ),
     title: <> Trade License <br /> Assistance </>,
     description: "Once planning is complete,  site preparation begins.",
-    link: "/services/",
+    link: "/services/trade-license-assistance",
 
   },
   {
@@ -45,7 +45,7 @@ const ServicesDataEn = [
     ),
     title: <>PRO<br />Services</>,
     description: "Once planning is complete,  site preparation begins.",
-    link: "/services/",
+    link: "/services/pro-services",
   },
   {
     id: "03",
@@ -81,7 +81,7 @@ const ServicesDataEn = [
     ),
     title: <>VAT & Tax<br />Consultancy</>,
     description: "Once planning is complete,  site preparation begins.",
-    link: "/services/",
+    link: "/services/vat-tax-consultancy",
   },
   {
     id: "04",
@@ -103,7 +103,7 @@ const ServicesDataEn = [
     ),
     title: <>Golden<br />Visa</>,
     description: "Once planning is complete,  site preparation begins.",
-    link: "/services/",
+    link: "/services/golden-visa",
   },
   {
     id: "05",
@@ -125,7 +125,7 @@ const ServicesDataEn = [
     ),
     title: <>Local Sponsorship &<br />Nominee Services</>,
     description: "Once planning is complete,  site preparation begins.",
-    link: "/services/",
+    link: "/services/local-sponsorship-nominee-services",
   },
   {
     id: "06",
@@ -143,7 +143,7 @@ const ServicesDataEn = [
     ),
     title: <>Visa & Immigration<br />Support</>,
     description: "Once planning is complete,  site preparation begins.",
-    link: "/services/",
+    link: "/services/visa-application-development",
   },
   {
     id: "07",
@@ -157,7 +157,7 @@ const ServicesDataEn = [
     ),
     title: <>Business Centre<br />Solutions</>,
     description: "Once planning is complete,  site preparation begins.",
-    link: "/services/",
+    link: "/services/business-centre-solutions",
   },
   {
     id: "08",
@@ -179,6 +179,8 @@ const ServicesDataEn = [
     description: "Once planning is complete,  site preparation begins.",
     link: "/services/",
   },
+
+
 ];
 
 

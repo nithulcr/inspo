@@ -45,7 +45,7 @@ const ServicesFullDataEn = [
     ),
     title: <>PRO<br />Services</>,
     description: "Once planning is complete,  site preparation begins.",
-    link: "/services/",
+    link: "/services/pro-services",
   },
   {
     id: "03",
@@ -81,7 +81,7 @@ const ServicesFullDataEn = [
     ),
     title: <>VAT & Tax<br />Consultancy</>,
     description: "Once planning is complete,  site preparation begins.",
-    link: "/services/",
+    link: "/services/vat-tax-consultancy",
   },
   {
     id: "04",
@@ -103,7 +103,7 @@ const ServicesFullDataEn = [
     ),
     title: <>Golden<br />Visa</>,
     description: "Once planning is complete,  site preparation begins.",
-    link: "/services/",
+    link: "/services/golden-visa",
   },
   {
     id: "05",
@@ -125,7 +125,7 @@ const ServicesFullDataEn = [
     ),
     title: <>Local Sponsorship &<br />Nominee Services</>,
     description: "Once planning is complete,  site preparation begins.",
-    link: "/services/",
+    link: "/services/local-sponsorship-nominee-services",
   },
   {
     id: "06",
@@ -143,7 +143,7 @@ const ServicesFullDataEn = [
     ),
     title: <>Visa & Immigration<br />Support</>,
     description: "Once planning is complete,  site preparation begins.",
-    link: "/services/",
+    link: "/services/visa-application-development",
   },
   {
     id: "07",
@@ -157,7 +157,7 @@ const ServicesFullDataEn = [
     ),
     title: <>Business Centre<br />Solutions</>,
     description: "Once planning is complete,  site preparation begins.",
-    link: "/services/",
+    link: "/services/business-centre-solutions",
   },
   {
     id: "08",
@@ -203,7 +203,7 @@ const ServicesFullDataEn = [
     title: <>Marketing <br />
       Services</>,
     description: "Once planning is complete,  site preparation begins.",
-    link: "/services/",
+    link: "/services/marketing-services",
   },
   {
     id: "10",
@@ -227,7 +227,7 @@ const ServicesFullDataEn = [
     ),
     title: <>Web & Application<br />Development</>,
     description: "Once planning is complete,  site preparation begins.",
-    link: "/services/",
+    link: "/services/wev-application-development",
   },
 
 ];

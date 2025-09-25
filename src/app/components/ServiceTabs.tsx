@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from "next/image";
 
 const services = [
     { href: "/services/trade-license-assistance", label: "Trade License Assistance" },
@@ -17,7 +18,7 @@ const services = [
 
 export default function ServiceTabs({ current }: { current: string }) {
     return (
-        <div className="pt-5 lg:pt-10">
+        <div className="pt-5 lg:pt-10 flex flex-col gap-5">
             <div className="bg-[var(--blue)] p-6 lg:p-8 rounded-[24px]">
                 <h4 className='text-2xl font-normal text-white mb-5'>Categories</h4>
                 <div className="flex items-center flex-wrap gap-3 ">
@@ -34,6 +35,16 @@ export default function ServiceTabs({ current }: { current: string }) {
                     ))}
                 </div>
             </div>
+            <a className="bg-[var(--blue)] px-6 py-4 lg:px-8 lg:py-5 rounded-[24px] text-white flex items-center justify-between gap-4">
+               <span className='flex-none text-xl'> Get a quote</span>
+                <Image
+                            src="/whatsapp.png"
+                            alt="Business for Success"
+                            width={50}
+                            height={50}
+                            className="object-contain  w-8 h-8"
+                          />
+            </a>
         </div>
     );
 }
