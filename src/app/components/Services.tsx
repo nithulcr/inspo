@@ -3,7 +3,7 @@ import Link from "next/link";
 import AnimatedButton from "./AnimatedButton";
 
 
-const ServicesFullDataEn = [
+const ServicesDataEn = [
   {
     id: "01",
     icon: (
@@ -143,7 +143,7 @@ const ServicesFullDataEn = [
     ),
     title: <>Visa & Immigration<br />Support</>,
     description: "Once planning is complete,  site preparation begins.",
-    link: "/services/visa-application-development",
+    link: "/services/visa-immigration-support",
   },
   {
     id: "07",
@@ -177,7 +177,7 @@ const ServicesFullDataEn = [
     ),
     title: <>Bank Account<br />Opening Support</>,
     description: "Once planning is complete,  site preparation begins.",
-    link: "/services/",
+    link: "/services/bank-account-opening-support",
   },
 
 

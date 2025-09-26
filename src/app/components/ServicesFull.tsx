@@ -143,7 +143,7 @@ const ServicesFullDataEn = [
     ),
     title: <>Visa & Immigration<br />Support</>,
     description: "Once planning is complete,  site preparation begins.",
-    link: "/services/visa-application-development",
+    link: "/services/visa-immigration-support",
   },
   {
     id: "07",
@@ -177,7 +177,7 @@ const ServicesFullDataEn = [
     ),
     title: <>Bank Account<br />Opening Support</>,
     description: "Once planning is complete,  site preparation begins.",
-    link: "/services/",
+    link: "/services/bank-account-opening-support",
   },
     {
     id: "09",
@@ -227,7 +227,7 @@ const ServicesFullDataEn = [
     ),
     title: <>Web & Application<br />Development</>,
     description: "Once planning is complete,  site preparation begins.",
-    link: "/services/wev-application-development",
+    link: "/services/web-application-development",
   },
 
 ];
