@@ -47,7 +47,6 @@ const Preloader: React.FC<PreloaderProps> = ({ onComplete }) => {
         opacity: fadeOut ? 0 : 1,
       }}
     >
-      <div className="bg-fixed absolute inset-0 bg-[url('/pattern.png')] bg-cover bg-center"></div>
       <div className=" ">
 
         <img src="/logo.png" alt="Logo" width={200} height={70} className="w-[200px] lg:w-[250px]" />

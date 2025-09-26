@@ -90,7 +90,7 @@ export default function Header() {
                                     </svg>
 
                                 </a>
-                                <a href="https://x.com" aria-label="X" target="_blank" rel="noopener noreferrer" className="w-5 h-5">
+                                <a href="https://www.instagram.com/inspouae/" aria-label="X" target="_blank" rel="noopener noreferrer" className="w-5 h-5">
                                     <svg width="20" height="20" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g clipPath="url(#clip0_1036_725)">
                                             <mask id="mask0_1036_725" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="19">

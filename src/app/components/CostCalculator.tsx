@@ -5,6 +5,84 @@ import AnimatedButton from "./AnimatedButton";
 
 export default function CostCalculator() {
     const [showForm, setShowForm] = useState(false);
+    const [businessActivity, setBusinessActivity] = useState('');
+    const [premisesRequired, setPremisesRequired] = useState('');
+    const [numberOfVisas, setNumberOfVisas] = useState('');
+    const [numberOfOwners, setNumberOfOwners] = useState('');
+    const [jurisdiction, setJurisdiction] = useState('');
+
+    const [firstName, setFirstName] = useState('');
+    const [secondName, setSecondName] = useState('');
+    const [phoneNumber, setPhoneNumber] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
+    const [loading, setLoading] = useState(false);
+    const [messageStatus, setMessageStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null);
+
+    const handleDetailsSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        setLoading(true);
+        setMessageStatus(null);
+
+        const formData = {
+            businessActivity,
+            premisesRequired,
+            numberOfVisas,
+            numberOfOwners,
+            jurisdiction,
+            firstName,
+            secondName,
+            phoneNumber,
+            email,
+            message,
+        };
+
+        try {
+            const res = await fetch('/api/cost-calculator', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
+
+            if (res.ok) {
+                setMessageStatus({ type: 'success', message: 'Your cost calculation request has been sent!' });
+                // Optionally reset form fields here
+                setBusinessActivity('');
+                setPremisesRequired('');
+                setNumberOfVisas('');
+                setNumberOfOwners('');
+                setJurisdiction('');
+                setFirstName('');
+                setSecondName('');
+                setPhoneNumber('');
+                setEmail('');
+                setMessage('');
+                setShowForm(false); // Go back to the first form
+            } else {
+                const errorData = await res.json();
+                setMessageStatus({ type: 'error', message: errorData.error || 'Failed to send cost calculation request.' });
+            }
+        } catch (error) {
+            setMessageStatus({ type: 'error', message: 'An unexpected error occurred.' });
+            console.error('Error submitting cost calculator form:', error);
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    const handleCalculateClick = () => {
+        setMessageStatus(null); // Clear previous messages
+        if (!businessActivity || !premisesRequired || !numberOfVisas || !numberOfOwners || !jurisdiction) {
+            setMessageStatus({ type: 'error', message: 'Please select all required fields in the calculator.' });
+            return;
+        }
+        setShowForm(true);
+    };
+
+    const handleBackClick = () => {
+        setShowForm(false);
+    };
 
     return (
         <section className="">
@@ -22,7 +100,12 @@ export default function CostCalculator() {
                                 <form className="space-y-5 calculator-form" onSubmit={e => e.preventDefault()}>
                                     <div className="grid sm:grid-cols-2 gap-4">
                                         <div className="relative">
-                                            <select className="appearance-none bg-[var(--blue1)] text-white rounded-xl p-4 w-full focus:outline-none">
+                                            <select
+                                                name="businessActivity"
+                                                className="appearance-none bg-[var(--blue1)] text-white rounded-xl p-4 w-full focus:outline-none"
+                                                value={businessActivity}
+                                                onChange={(e) => setBusinessActivity(e.target.value)}
+                                            >
                                                 <option value="" >Choose your Business Activity</option>
                                                 <option value="Accounting &amp; Auditing" aria-selected="false">Accounting &amp; Auditing</option>
                                                 <option value="Advertising" aria-selected="false">Advertising</option>
@@ -80,7 +163,12 @@ export default function CostCalculator() {
                                         </div>
 
                                         <div className="relative">
-                                            <select className="appearance-none bg-[var(--blue1)] text-white rounded-xl p-4 w-full focus:outline-none">
+                                            <select
+                                                name="premisesRequired"
+                                                className="appearance-none bg-[var(--blue1)] text-white rounded-xl p-4 w-full focus:outline-none"
+                                                value={premisesRequired}
+                                                onChange={(e) => setPremisesRequired(e.target.value)}
+                                            >
                                                 <option>What Premises You Require?</option>
                                                 <option value="Photography" aria-selected="false">Photography</option>
                                                 <option value="PR Services" aria-selected="false">PR Services</option>
@@ -108,7 +196,12 @@ export default function CostCalculator() {
                                         </div>
 
                                         <div className="relative">
-                                            <select className="appearance-none bg-[var(--blue1)] text-white rounded-xl p-4 w-full focus:outline-none">
+                                            <select
+                                                name="numberOfVisas"
+                                                className="appearance-none bg-[var(--blue1)] text-white rounded-xl p-4 w-full focus:outline-none"
+                                                value={numberOfVisas}
+                                                onChange={(e) => setNumberOfVisas(e.target.value)}
+                                            >
                                                 <option value="">No. of Visas Required</option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -131,7 +224,12 @@ export default function CostCalculator() {
                                         </div>
 
                                         <div className="relative">
-                                            <select className="appearance-none bg-[var(--blue1)] text-white rounded-xl p-4 w-full focus:outline-none">
+                                            <select
+                                                name="numberOfOwners"
+                                                className="appearance-none bg-[var(--blue1)] text-white rounded-xl p-4 w-full focus:outline-none"
+                                                value={numberOfOwners}
+                                                onChange={(e) => setNumberOfOwners(e.target.value)}
+                                            >
                                                 <option>No. of Owners</option>
 
                                                 <option value="1">1</option>
@@ -155,7 +253,12 @@ export default function CostCalculator() {
                                         </div>
                                     </div>
                                     <div className="relative">
-                                        <select className="appearance-none bg-[var(--blue1)] text-white rounded-xl p-4 w-full focus:outline-none">
+                                        <select
+                                            name="jurisdiction"
+                                            className="appearance-none bg-[var(--blue1)] text-white rounded-xl p-4 w-full focus:outline-none"
+                                            value={jurisdiction}
+                                            onChange={(e) => setJurisdiction(e.target.value)}
+                                        >
                                             <option>Choose Your Jurisdiction</option>
                                             <option>Mainland</option>
                                             <option>Freezone</option>
@@ -171,30 +274,78 @@ export default function CostCalculator() {
                                     </div>
 
 
-                                    <AnimatedButton type="button" onClick={() => setShowForm(true)} label="Calculate Now" className="w-full text-white lg:mt-2" />
-                                </form>
-                            </>
+                                    <AnimatedButton type="button" onClick={handleCalculateClick} label="Calculate Now" className="w-full text-white lg:mt-2" />
+                                    {messageStatus && (
+                                        <p className={`${messageStatus.type === 'success' ? 'text-green-500' : 'text-red-500'} text-center mt-4`}>
+                                            {messageStatus.message}
+                                        </p>
+                                    )}
+                                </form>                            </>
                         ) : (
                             <>
 
                                 <h2 className="text-white lg:text-7xl text-3xl font-bold mb-4 text-center">
                                     Fill Your Details
                                 </h2>
-                                <p className="text-white lg:text-lg mb-10 text-center max-w-[500px] mx-auto">
+                                <p className="text-white lg:text-lg mb-10 text-center max-w-[600px] mx-auto">
                                     Once the contact information is received, designate a responsible team or individual to review the submitted inquiries
                                 </p>
 
-                                <form className="space-y-4">
+                                <form onSubmit={handleDetailsSubmit} className="space-y-4">
                                     <div className="grid sm:grid-cols-2 gap-4">
-                                        <input type="text" placeholder="First Name" className="bg-[var(--blue1)] text-white rounded-xl px-4 py-3 w-full focus:outline-none" />
-                                        <input type="text" placeholder="Second Name (optional)" className="bg-[var(--blue1)] text-white rounded-xl px-4 py-3 w-full focus:outline-none" />
-                                        <input type="tel" placeholder="Phone Number" className="bg-[var(--blue1)] text-white rounded-xl px-4 py-3 w-full focus:outline-none" />
-                                        <input type="email" placeholder="Email (optional)" className="bg-[var(--blue1)] text-white rounded-xl px-4 py-3 w-full focus:outline-none" />
+                                        <input
+                                            type="text"
+                                            name="firstName"
+                                            placeholder="First Name"
+                                            className="bg-[var(--blue1)] text-white rounded-xl px-4 py-3 w-full focus:outline-none"
+                                            value={firstName}
+                                            onChange={(e) => setFirstName(e.target.value)}
+                                            required
+                                        />
+                                        <input
+                                            type="text"
+                                            name="secondName"
+                                            placeholder="Second Name (optional)"
+                                            className="bg-[var(--blue1)] text-white rounded-xl px-4 py-3 w-full focus:outline-none"
+                                            value={secondName}
+                                            onChange={(e) => setSecondName(e.target.value)}
+                                        />
+                                        <input
+                                            type="tel"
+                                            name="phoneNumber"
+                                            placeholder="Phone Number"
+                                            className="bg-[var(--blue1)] text-white rounded-xl px-4 py-3 w-full focus:outline-none"
+                                            value={phoneNumber}
+                                            onChange={(e) => setPhoneNumber(e.target.value)}
+                                            required
+                                        />
+                                        <input
+                                            type="email"
+                                            name="email"
+                                            placeholder="Email (optional)"
+                                            className="bg-[var(--blue1)] text-white rounded-xl px-4 py-3 w-full focus:outline-none"
+                                            value={email}
+                                            onChange={(e) => setEmail(e.target.value)}
+                                        />
                                     </div>
-                                    <textarea placeholder="Message" rows={4} className="bg-[var(--blue1)] text-white rounded-xl px-4 py-3 w-full focus:outline-none"></textarea>
+                                    <textarea
+                                        name="message"
+                                        placeholder="Message"
+                                        rows={4}
+                                        className="bg-[var(--blue1)] text-white rounded-xl px-4 py-3 w-full focus:outline-none"
+                                        value={message}
+                                        onChange={(e) => setMessage(e.target.value)}
+                                    ></textarea>
+                                    <div className="flex items-center justify-end gap-3 flex-wrap cost-btns">
+                                        <AnimatedButton onClick={handleBackClick} label="Back" className="text-white lg:mt-2" />
 
-                                    <AnimatedButton label="Submit" className="w-full text-white lg:mt-2" />
-
+                                        <AnimatedButton type="submit" label={loading ? "Submitting..." : "Submit"} className="transparent-btn  lg:mt-2" disabled={loading} />
+                                    </div>
+                                    {messageStatus && (
+                                        <p className={`${messageStatus.type === 'success' ? 'text-green-500' : 'text-red-500'} text-center mt-4`}>
+                                            {messageStatus.message}
+                                        </p>
+                                    )}
                                 </form>
                             </>
                         )}

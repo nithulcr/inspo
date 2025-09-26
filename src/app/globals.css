@@ -344,4 +344,9 @@ body {
   .service-shape {
     height: 320px;
   }
+  .cost-btns .button {
+
+    min-width: auto;
+
+}
 }
