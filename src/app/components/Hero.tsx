@@ -29,15 +29,13 @@ const Hero3 = () => {
 
 
                             <h1 className="text-4xl lg:text-[36px] xl:text-[48px] font-bold mb-1 leading-tight">
-                                Simplify Business Setup
-                                in Dubai With INSPO
+                                Simplify Your Business Setup in UAE with INSPO
                             </h1>
                             <p className="text-md md:text-lg font-light2">
-                                Business Consultants in Dubai who genuinely care, guiding you step by step
-                                with personalized advice to turn your business dream into reality.
+                                Trusted business consultants in UAE, guiding you step by step with personalized advice to turn your business dream into reality.
                             </p>
                             <div className="mt-5">
-                               <AnimatedButton href="" label="Talk with Us" className="w-fit transparent-btn" imgOrSvg={<img src="/whatsapp.png" alt="Icon" className="w-6" />} />
+                                <AnimatedButton href="" label="Let's Talk" className="w-fit transparent-btn" imgOrSvg={<img src="/whatsapp.png" alt="Icon" className="w-6" />} />
                             </div>
 
 

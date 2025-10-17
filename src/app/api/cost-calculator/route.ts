@@ -42,8 +42,9 @@ export async function POST(req: NextRequest) {
 
   try {
     await transporter.sendMail({
-      from: `"Inspo Website" <${process.env.EMAIL_USER}>`,
+      from: `"${firstName}" <${process.env.EMAIL_USER}>`,
       to: process.env.RECIPIENT_EMAIL,
+      replyTo: email,
       subject: 'New Cost Calculator Submission from Inspo Website',
       html: `
         <h2>New Cost Calculator Submission</h2>

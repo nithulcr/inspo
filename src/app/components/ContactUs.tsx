@@ -18,7 +18,7 @@ export default function ContactSection() {
     const form = e.target as HTMLFormElement;
     const formData = {
       name: (form.elements.namedItem('name') as HTMLInputElement).value,
-      number: (form.elements.namedItem('phone') as HTMLInputElement).value,
+      number: (form.elements.namedItem('number') as HTMLInputElement).value,
       email: (form.elements.namedItem('email') as HTMLInputElement).value,
       message: (form.elements.namedItem('message') as HTMLTextAreaElement).value,
     };
@@ -61,7 +61,7 @@ export default function ContactSection() {
                   </span>
                   <div className="flex flex-col gap-1">
                     <span className="text-[#8C8C8C] text-sm">Call Us 24/7</span>
-                    <span className="font-semibold text-lg">(+256) 2145.2156</span>
+                    <span className="font-semibold text-lg">+91 9048 552244</span>
                   </div>
                 </li>
                 <li className="flex items-center gap-4">
@@ -74,7 +74,7 @@ export default function ContactSection() {
                   </span>
                   <div className="flex flex-col gap-1">
                     <span className="text-[#8C8C8C] text-sm">Work with us</span>
-                    <span className="font-semibold text-lg">info@invena.com</span>
+                    <span className="font-semibold text-lg">info@Inspo.com</span>
                   </div>
                 </li>
                 <li className="flex items-center gap-4">
@@ -109,7 +109,7 @@ export default function ContactSection() {
               />
 
               <input
-                name="phone"
+                name="number"
                 className="w-full bg-[#F6F6F6] rounded-4xl px-6 py-3 focus:outline-none placeholder-[#BFBCBC]"
                 type="text"
                 placeholder={"Phone number"}

@@ -5,18 +5,18 @@ import AnimatedButton from "./AnimatedButton";
 const cards = [
     {
         img: "/plan1.png",
-        title: "DUBAI MAILAND",
-        price: "AED 8,999",
+        title: "UAE Mainland",
+        price: "AED 12,999",
         description:
-            "We are dedicated to guiding you on your financial journey with expertise",
+            "The perfect choice for businesses looking to operate anywhere in the UAE with maximum flexibility and growth opportunities.",
         features: [
             "100% business ownership",
-            "Investor Visa Option Available",
+            "Investor Visa Option",
             "All Inclusive Licenses",
             "Corporate Banking Assistance",
-            "FREE VAT Consultation",
+            "Tax Support & Consultation",
             "Licenses Approval in 24Hrs",
-            "Company Startup",
+            "Complete Company Startup",
         ],
         button: "Contact Sales",
         link: "/contact-sales",
@@ -24,18 +24,18 @@ const cards = [
     },
     {
         img: "/plan2.png",
-        title: "DUBAI MAILAND",
-        price: "AED 8,999",
+        title: "UAE Freezone",
+        price: "AED 4,444",
         description:
-            "We are dedicated to guiding you on your financial journey with expertise",
+            "Ideal for startups, entrepreneurs, and investors seeking cost-effective, tax-friendly, and fast business setup solutions in the UAE.",
         features: [
             "100% business ownership",
-            "Investor Visa Option Available",
-            "All Inclusive Licenses",
-            "Corporate Banking Assistance",
-            "FREE VAT Consultation",
-            "Licenses Approval in 24Hrs",
-            "Company Startup",
+            "Tax Support & Consultation",
+            "Quick & Affordable Licensing",
+            "Investor Visa Options",
+            "Office/Workspace Flexibility",
+            "Corporate Banking Support",
+            "Hassle-Free Company Registration",
         ],
         button: "Contact Sales",
         link: "/contact-sales",
@@ -43,18 +43,18 @@ const cards = [
     },
     {
         img: "/plan3.png",
-        title: "DUBAI MAILAND",
-        price: "AED 8,999",
+        title: "UAE Offshore",
+        price: "AED 10,999",
         description:
-            "We are dedicated to guiding you on your financial journey with expertise",
+            "Best suited for global entrepreneurs aiming for asset protection, international trade, and a secure UAE business presence.",
         features: [
-            "100% business ownership",
-            "Investor Visa Option Available",
-            "All Inclusive Licenses",
-            "Corporate Banking Assistance",
-            "FREE VAT Consultation",
-            "Licenses Approval in 24Hrs",
-            "Company Startup",
+            "100% Foreign Ownership",
+            "International Trade Benefits",
+            "Tax-Free Setup",
+            "Confidential Business Structure",
+            "Bank Account Assistance",
+            "Fast Incorporation Process",
+            "Legal & Compliance Guidance",
         ],
         button: "Contact Sales",
         link: "/contact-sales",
@@ -66,12 +66,12 @@ export default function UaeCompanyCards() {
     return (
         <section className="bg-white py-18 lg:py-26">
             <div className="max-w-[1320px] mx-auto  px-6">
-                <div className="max-w-[640px] mx-auto mb-8 lg:mb-18">
-                    <h2 className="text-2xl lg:text-[40px] font-semibold leading-tight text-center mb-3 max-w-xl">
-                        Establish your company  in the UAE today
+                <div className="max-w-[840px] mx-auto mb-8 lg:mb-18">
+                    <h2 className="text-2xl lg:text-[40px] font-semibold leading-tight text-center mb-3 max-w-xl mx-auto">
+                       Establish Your Business in the UAE with Ease
                     </h2>
-                    <p className="text-gray-400 text-sm md:text-base max-w-2xl mx-auto text-center">
-                        At Top One, we provide Business Setup Packages tailored to meet various business requirements. Each package is a customized solution that includes services such as licensing, workspace solutions, and more, ensuring a seamless and effective process for setting up businesses in Dubai’s freezones.
+                    <p className="text-gray-400 text-sm md:text-base max-w-3xl mx-auto text-center">
+                       At INSPO Corporate Services, we provide comprehensive business setup solutions across the UAE — including mainland, free zones, and offshore options. Our customized packages cover licensing, office space, visas, and more, ensuring a smooth and hassle-free journey for entrepreneurs and investors. With our expertise, starting your business in the UAE has never been simpler.
                     </p>
                 </div>
                 <div className="flex overflow-auto md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 -mr-6 -ml-6 md:m-0 pl-6 pr-6 md:p-0">

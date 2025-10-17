@@ -71,7 +71,7 @@ export default function Footer() {
                 </span>
                 <div className="flex flex-col gap-1">
                   <span className="text-[#8C8C8C] text-[14px]">Call Us 24/7</span>
-                  <span className="font-semibold">(+256) 2145.2156</span>
+                  <span className="font-semibold">+91 9048 552244</span>
                 </div>
               </li>
               <li className="flex items-center gap-4">
@@ -84,7 +84,7 @@ export default function Footer() {
                 </span>
                 <div className="flex flex-col gap-1">
                   <span className="text-[#8C8C8C] text-[14px]">Work with us</span>
-                  <span className="font-semibold">info@invena.com</span>
+                  <span className="font-semibold">info@Inspo.com</span>
                 </div>
               </li>
               <li className="flex items-center gap-4">

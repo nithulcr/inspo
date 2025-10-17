@@ -94,8 +94,8 @@ export default function CostCalculator() {
                                 <h2 className="text-white lg:text-7xl text-3xl font-bold mb-4 text-center">
                                     Cost Calculator
                                 </h2>
-                                <p className="text-white lg:text-lg mb-10 text-center max-w-[460px] mx-auto">
-                                    Get an estimated cost of your company setup in under a minute with our interactive cost calculator
+                                <p className="text-white lg:text-lg mb-10 text-center max-w-[550px] mx-auto">
+                                    Quickly estimate the cost of setting up your company in less than a minute with our interactive cost calculator.
                                 </p>
                                 <form className="space-y-5 calculator-form" onSubmit={e => e.preventDefault()}>
                                     <div className="grid sm:grid-cols-2 gap-4">
@@ -106,7 +106,7 @@ export default function CostCalculator() {
                                                 value={businessActivity}
                                                 onChange={(e) => setBusinessActivity(e.target.value)}
                                             >
-                                                <option value="" >Choose your Business Activity</option>
+                                                <option value="" >Choose Your Business Activity</option>
                                                 <option value="Accounting &amp; Auditing" aria-selected="false">Accounting &amp; Auditing</option>
                                                 <option value="Advertising" aria-selected="false">Advertising</option>
                                                 <option value="Automobile Trading" aria-selected="false">Automobile Trading</option>
@@ -169,7 +169,7 @@ export default function CostCalculator() {
                                                 value={premisesRequired}
                                                 onChange={(e) => setPremisesRequired(e.target.value)}
                                             >
-                                                <option>What Premises You Require?</option>
+                                                <option>What Premises Do You Require?</option>
                                                 <option value="Photography" aria-selected="false">Photography</option>
                                                 <option value="PR Services" aria-selected="false">PR Services</option>
                                                 <option value="Project Management" aria-selected="false">Project Management</option>
@@ -202,7 +202,7 @@ export default function CostCalculator() {
                                                 value={numberOfVisas}
                                                 onChange={(e) => setNumberOfVisas(e.target.value)}
                                             >
-                                                <option value="">No. of Visas Required</option>
+                                                <option value="">Number of Visas Required</option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -230,7 +230,7 @@ export default function CostCalculator() {
                                                 value={numberOfOwners}
                                                 onChange={(e) => setNumberOfOwners(e.target.value)}
                                             >
-                                                <option>No. of Owners</option>
+                                                <option>Number of Owners</option>
 
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>

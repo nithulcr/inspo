@@ -5,9 +5,11 @@ import Preloader from "./Preloader";
 import Header from "./Header";
 import Hero from "./Hero";
 import Marquee from "./Marquee";
-import ThreeStepProcess from "./ThreeStepProcess";
+// import ThreeStepProcess from "./ThreeStepProcess";
 
+import ConsultationBanner2 from "./ConsultationBanner2";
 import Features from "./Features";
+
 
 import AboutUs from "./AboutUs";
 import UaeCompanyCards from "./UaeCompanyCards";
@@ -59,8 +61,10 @@ export default function HomePageClient() {
 
 
           <AboutUs />
-          <ThreeStepProcess />
+          {/* <ThreeStepProcess /> */}
+          <ConsultationBanner2 />
           <Services />
+
 
 
           <ConsultationBanner />

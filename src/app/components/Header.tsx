@@ -54,7 +54,7 @@ export default function Header() {
                     <div className="h-full">
                         <div className="h-full max-w-[660px] flex items-center  space-x-6 top-header-left relative ml-auto px-6 py-2">
                             <p>
-                                Are you ready to grow up your business?
+                                Ready to grow up your business?
                             </p>
                             <a href="ContactUs" className="flex items-center space-x-2 font-bold pr-5">
                                 Contact Us

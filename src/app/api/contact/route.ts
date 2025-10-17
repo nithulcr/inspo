@@ -25,8 +25,9 @@ export async function POST(req: NextRequest) {
 
   try {
     const info = await transporter.sendMail({
-      from: `"Inspo Website" <${process.env.EMAIL_USER}>`,
+      from: `inspouae Website`,
       to: process.env.RECIPIENT_EMAIL,
+      replyTo: email,
       subject: 'New Contact Message from Inspo Website',
       html: `
         <h2>New Message Received</h2>

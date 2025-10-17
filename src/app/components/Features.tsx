@@ -21,8 +21,8 @@ const featuresEn = [
         </svg>
         </>,
 
-        title: "Efficient Business Setup",
-        description: "Launch your business seamlessly with Top One's streamlined processes—from registration to licensing, ensuring a hassle-free swift establishment."
+        title: "Seamless Business Setup",
+        description: "INSPO makes company formation simple and stress-free. From trade licenses to banking support, we manage the entire process with precision, ensuring your business is launched smoothly and without delays."
     },
     {
         id: '02',
@@ -37,8 +37,8 @@ const featuresEn = [
         </svg>
         </>,
 
-        title: "Expert Consultancy",
-        description: "Launch your business seamlessly with Top One's streamlined processes—from registration to licensing, ensuring a hassle-free swift establishment."
+        title: "Trusted PRO & Visa Solutions",
+        description: "With INSPO’s expert PRO team, government procedures are no longer a challenge. We provide full visa and immigration support, including Golden Visa services, so your business stays compliant and your people stay supported."
     },
     {
         id: '03',
@@ -61,8 +61,8 @@ const featuresEn = [
         </svg>
         </>,
 
-        title: "Multiple Services",
-        description: "Launch your business seamlessly with Top One's streamlined processes—from registration to licensing, ensuring a hassle-free swift establishment."
+        title: "Smart Tax & Financial Advisory",
+        description: "INSPO helps you stay ahead with reliable VAT and tax consultancy. Our financial experts guide you with accurate compliance, planning, and reporting, empowering your business to grow with confidence and stability."
     },
     {
         id: '04',
@@ -83,8 +83,8 @@ const featuresEn = [
         </svg>
         </>,
 
-        title: "Multiple Services",
-        description: "Launch your business seamlessly with Top One's streamlined processes—from registration to licensing, ensuring a hassle-free swift establishment."
+        title: "Growth & Digital Innovation",
+        description: "INSPO goes beyond setup by fueling your future growth. From business centre solutions and marketing strategies to web and app development, we combine innovation with strategy to position your company for long-term success."
     }
 ];
 
@@ -93,7 +93,7 @@ export default function Features() {
 
     return (
         <section id="features" className="py-12 lg:py-20  relative text-white lg:mt-[-180px] z-10">
-            <div className="max-w-[1200px] mx-auto px-6">
+            <div className="max-w-[1340px] mx-auto px-6">
 
                 <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  relative bg-[var(--blue)] rounded-3xl">
                     {features.map((feature) => (
