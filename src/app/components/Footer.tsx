@@ -104,7 +104,7 @@ export default function Footer() {
           </div>
           <div>
             <h2 className="text-xl font-semibold flex flex-col">
-              Office Inforamtion
+              Quick Links
               <span>------</span>
             </h2>
             <ul className="space-y-3 mt-6">
