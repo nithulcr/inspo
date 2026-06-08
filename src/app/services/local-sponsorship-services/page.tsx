@@ -173,7 +173,7 @@ export default function LocalSponsorshipNomineeServices() {
           </div>
           <div className='lg:col-span-1'>
             <div className='max-w-[500px] mx-auto'>
-              <ServiceTabs current="/services/local-sponsorship-nominee-services" />
+              <ServiceTabs current="/services/local-sponsorship-services" />
             </div>
           </div>
 

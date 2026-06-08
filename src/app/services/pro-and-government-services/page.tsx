@@ -53,11 +53,11 @@ export default function ProServices() {
         <div className="max-w-[1320px] mx-auto px-6  grid lg:grid-cols-3 z-1 gap-6 relative">
           <div className='flex flex-col gap-6 lg:gap-12 lg:col-span-2'>
             <div>
-              <h1 className='text-3xl lg:text-[36px] xl:text-[48px] font-bold mb-1 leading-tight max-w-[500px] mb-2'>PRO Services </h1>
-              <p className='max-w-[500px]'>UAE PRO Services: Fast Company Setup, Licensing, Visas, and Government Approvals</p>
+              <h1 className='text-3xl lg:text-[36px] xl:text-[48px] font-bold mb-1 leading-tight max-w-[500px] mb-2'>PRO & Government Services in UAE</h1>
+              <p className='max-w-[500px]'>Fast, reliable, and professional support for visas, licensing, typing, and government approvals.</p>
             </div>
             <Image
-              src="/pro-services.png"
+              src="/pro-services.jpg"
               alt="Business for Success"
               width={550}
               height={550}
@@ -65,9 +65,11 @@ export default function ProServices() {
             />
             <div className='flex flex-col gap-8 md:gap-12'>
               <div>
-                <h5 className='font-semibold mb-5 text-xl md:text-2xl'>Expert PRO Services in Dubai for Hassle‑Free Setup and Compliance</h5>
+                <h5 className='font-semibold mb-5 text-xl md:text-2xl'>Expert PRO Services in Dubai for Smooth Business Operations</h5>
                 <div className='text-[#A7A9AC] flex flex-col gap-4'>
-                  <p >A Public Relations Officer (PRO) plays a crucial role in Dubai, serving as the liaison between businesses and government authorities to ensure fast approvals, smooth operations, and full regulatory compliance. INSPO delivers simplified PRO services across the UAE, helping investors navigate documentation, licensing, visas, and approvals in both Mainland and Free Zones with transparency and accuracy. By appointing INSPO as a PRO agent, companies receive tailored support for company formation, trade license processing, Arabic translations, and government interactions—reducing admin burden and avoiding delays or fines. Our expert team understands unique business needs, manages end‑to‑end formalities, and can help cut administrative and PRO costs by up to 70%, so operations start quickly and remain compliant.</p>
+                  <p >PRO services are essential for handling government-related documentation, approvals, visa processing, license renewals, and official submissions in the UAE.</p>
+                  <p >At INSPO Business Setup, we provide complete PRO and government service support for companies, investors, employees, and families. Our team assists with visa applications, document typing, attestations, renewals, and government approvals, helping you save time, avoid delays, and stay compliant.</p>
+
                 </div>
 
               </div>
@@ -96,7 +98,7 @@ export default function ProServices() {
 
                     </div>
                     <h5 className='text-lg md:text-xl font-semibold mb-2'>Employment Visa </h5>
-                    <p className='text-[#A7A9AC]'>End-to-end processing of employee visas, from application to stamping.</p>
+                    <p className='text-[#A7A9AC]'>Complete support for employee visa processing, from application to stamping.</p>
                   </div>
                   <div className='  text-sm lg:px-3'>
                     <div className='flex  items-center bg-[#F6F6F6] p-4 rounded-full w-16 h-16 mb-2'>
@@ -136,7 +138,7 @@ export default function ProServices() {
 
                     </div>
                     <h5 className='text-lg md:text-xl font-semibold mb-2'>Maid Visa</h5>
-                    <p className='text-[#A7A9AC]'>Complete support for hiring and sponsoring domestic workers.</p>
+                    <p className='text-[#A7A9AC]'>Professional support for hiring and sponsoring domestic workers.</p>
                   </div>
                   <div className='  text-sm lg:px-3'>
                     <div className='flex  items-center bg-[#F6F6F6] p-4 rounded-full w-16 h-16 mb-2'>
@@ -156,7 +158,7 @@ export default function ProServices() {
 
                     </div>
                     <h5 className='text-lg md:text-xl font-semibold mb-2'>Tourist Visa </h5>
-                    <p className='text-[#A7A9AC]'>Fast and reliable tourist visa issuance for short-term visits.</p>
+                    <p className='text-[#A7A9AC]'>Fast and reliable tourist visa assistance for short-term visits.</p>
                   </div>
                   <div className='  text-sm lg:px-3'>
                     <div className='flex  items-center bg-[#F6F6F6] p-4 rounded-full w-16 h-16 mb-2'>
@@ -178,7 +180,7 @@ export default function ProServices() {
 
                     </div>
                     <h5 className='text-lg md:text-xl font-semibold mb-2'>Amer Services </h5>
-                    <p className='text-[#A7A9AC]'>Smooth handling of all immigration-related processes and government approvals.</p>
+                    <p className='text-[#A7A9AC]'>Support for immigration-related applications, visa services, and government approvals.</p>
                   </div>
                   <div className='  text-sm lg:px-3'>
                     <div className='flex  items-center bg-[#F6F6F6] p-4 rounded-full w-16 h-16 mb-2'>
@@ -199,7 +201,7 @@ export default function ProServices() {
 
                     </div>
                     <h5 className='text-lg md:text-xl font-semibold mb-2'>Tasheel Services </h5>
-                    <p className='text-[#A7A9AC]'>Comprehensive support for labour card issuance, renewals, and all Ministry of Labour transactions.</p>
+                    <p className='text-[#A7A9AC]'>Assistance with labour-related applications, work permits, and employment services.</p>
                   </div>
 
                 </div>
@@ -229,7 +231,7 @@ export default function ProServices() {
 
                     </div>
                     <h5 className='text-lg md:text-xl font-semibold mb-2'>Certificate Attestation & Equivalency</h5>
-                    <p className='text-[#A7A9AC]'>Legalization, verification, and attestation of educational, personal, and commercial documents.</p>
+                    <p className='text-[#A7A9AC]'>Support for educational, personal, and commercial document attestation.</p>
                   </div>
                   <div className='  text-sm lg:px-3'>
                     <div className='flex  items-center bg-[#F6F6F6] p-4 rounded-full w-16 h-16 mb-2'>
@@ -252,13 +254,15 @@ export default function ProServices() {
 
                     </div>
                     <h5 className='text-lg md:text-xl font-semibold mb-2'>Agreement Typing & Translation</h5>
-                    <p className='text-[#A7A9AC]'>Professional drafting of agreements, with legal and normal translation in multiple languages.</p>
+                    <p className='text-[#A7A9AC]'>Professional typing, agreement preparation, and translation support.</p>
                   </div>
                 </div>
               </div>
               <div className='lg:p-10 p-5 text-white bg-[var(--blue)] rounded-xl grid md:grid-cols-2 gap-6'>
-                <h4 className=' text-xl max-w-[300px]'>Explore Our Tailored PRO
-                  Service Packages</h4>
+                <div>
+                  <h4 className=' text-xl max-w-[300px]'>Need Reliable PRO Support?</h4>
+                <p className='text-sm pt-1'>Call us today for fast and professional assistance.</p>
+                </div>
 
                 <li className="flex items-center gap-4">
                   <span className="bg-white p-3 rounded-full  w-12 h-12 flex items-center justify-center">
@@ -268,8 +272,8 @@ export default function ProServices() {
 
                   </span>
                   <div className="flex flex-col gap-1">
-                    <span className="text-[14px]">Call Us 24/7</span>
-                    <span className="font-semibold">+91 9048 552244</span>
+                    <span className="text-[14px]">Get PRO Service Support</span>
+                    <span className="font-semibold">+971505614942</span>
                   </div>
                 </li>
 
@@ -280,7 +284,7 @@ export default function ProServices() {
           </div>
           <div className='lg:col-span-1'>
             <div className='max-w-[500px] mx-auto'>
-              <ServiceTabs current="/services/pro-services" />
+              <ServiceTabs current="/services/pro-and-government-services" />
             </div>
           </div>
 

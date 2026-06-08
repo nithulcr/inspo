@@ -61,7 +61,7 @@ export default function ContactSection() {
                   </span>
                   <div className="flex flex-col gap-1">
                     <span className="text-[#8C8C8C] text-sm">Call Us 24/7</span>
-                    <span className="font-semibold text-lg">+91 9048 552244</span>
+                    <span className="font-semibold text-lg">+971505614942</span>
                   </div>
                 </li>
                 <li className="flex items-center gap-4">
@@ -74,7 +74,7 @@ export default function ContactSection() {
                   </span>
                   <div className="flex flex-col gap-1">
                     <span className="text-[#8C8C8C] text-sm">Work with us</span>
-                    <span className="font-semibold text-lg">info@Inspo.com</span>
+                    <span className="font-semibold text-lg">info@inspo.ae</span>
                   </div>
                 </li>
                 <li className="flex items-center gap-4">

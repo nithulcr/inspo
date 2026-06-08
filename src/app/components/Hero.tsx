@@ -34,8 +34,10 @@ const Hero3 = () => {
                             <p className="text-md md:text-lg font-light2">
                                 Trusted business consultants in UAE, guiding you step by step with personalized advice to turn your business dream into reality.
                             </p>
-                            <div className="mt-5">
-                                <AnimatedButton href="" label="Let's Talk" className="w-fit transparent-btn" imgOrSvg={<img src="/whatsapp.png" alt="Icon" className="w-6" />} />
+                            <div className="mt-5 flex items-center gap-3">
+                                <AnimatedButton href="/ContactUs" label="Free Consultation" className="w-fit"  />
+                                <AnimatedButton href="#costCalculator" label="Get Started" className="w-fit transparent-btn"  />
+
                             </div>
 
 

@@ -52,11 +52,11 @@ export default function TradeLicenseAssistance() {
         <div className="max-w-[1320px] mx-auto px-6  grid lg:grid-cols-3 z-1 gap-6 relative">
           <div className='flex flex-col gap-6 lg:gap-12 lg:col-span-2'>
             <div>
-              <h1 className='text-3xl lg:text-[36px] xl:text-[48px] font-bold mb-1 leading-tight max-w-[500px] mb-2'>Smart and effective business agency.</h1>
-              <p className='max-w-[500px]'>With a team of experienced professionals and a passion for innovation, we combine cutting-edge strategies</p>
+              <h1 className='text-3xl lg:text-[36px] xl:text-[48px] font-bold mb-1 leading-tight max-w-[500px] mb-2'>Dubai Trade License Assistance in UAE</h1>
+              <p className='max-w-[500px]'>Start your business in Dubai with expert guidance and complete documentation support.s</p>
             </div>
             <Image
-              src="/trade.png"
+              src="/trade.jpg"
               alt="Business for Success"
               width={550}
               height={550}
@@ -64,32 +64,32 @@ export default function TradeLicenseAssistance() {
             />
             <div className='flex flex-col gap-8 md:gap-12'>
               <div>
-                <h5 className='font-semibold mb-5 text-xl md:text-2xl'>Dubai Trade License Explained: Cost, Benefits & Process</h5>
+                
                 <div className='text-[#A7A9AC] flex flex-col gap-4'>
-                  <p >A Business Trade License in Dubai is a mandatory document to operate legally in the UAE. To obtain this license, entrepreneurs must secure approvals from government authorities and the Department of Economy and Tourism (DET, formerly DED). In addition, all company formation documents must be cleared by various UAE agencies within a limited timeframe. For first-time investors, this process can often feel overwhelming, time-consuming, and costly</p>
-                  <p>At INSPO Business Setup, we make this journey simple and stress-free. With years of expertise and a proven track record, we provide end-to-end support to help you establish and grow your business in Dubai.</p>
+                  <p >A Dubai Trade License allows your company to operate legally in the UAE. Choosing the right license type, business activity, and jurisdiction is important for a smooth and successful company setup.</p>
+                  <p>At INSPO Business Setup, we provide end-to-end support for trade license applications, document preparation, government approvals, and license issuance. Our team helps you complete the process with clarity, speed, and confidence.</p>
                 </div>
 
               </div>
               <div>
-                <h5 className='font-semibold mb-5 text-xl md:text-2xl'>Key Benefits of a Dubai Trade License for Entrepreneurs</h5>
+                <h5 className='font-semibold mb-5 text-xl md:text-2xl'>Key Benefits of a Dubai Trade License</h5>
                 <div className=' flex flex-col gap-5'>
-                  <p className='text-[#A7A9AC]'>Obtaining a Business Trade License in Dubai not only makes your company legally compliant but also unlocks a range of benefits that help entrepreneurs grow and expand their business. Some of the key advantages include</p>
+                  <p className='text-[#A7A9AC]'>A Dubai trade license gives your business legal recognition and opens the door to growth opportunities in the UAE and international markets.</p>
                   <div className='flex gap-2 flex-wrap text-sm'>
-                    <div className='flex gap-1 items-center bg-[#F6F6F6] py-2 px-3 rounded-md'>Legal Authorization {CheckmarkIcon}</div>
+                    <div className='flex gap-1 items-center bg-[#F6F6F6] py-2 px-3 rounded-md'>Legal Business Authorization {CheckmarkIcon}</div>
                     <div className='flex gap-1 items-center bg-[#F6F6F6] py-2 px-3 rounded-md'>Multiple Business Activities {CheckmarkIcon}</div>
 
-                    <div className='flex gap-1 items-center bg-[#F6F6F6] py-2 px-3 rounded-md'>Access to Local and International Markets {CheckmarkIcon}</div>
+                    <div className='flex gap-1 items-center bg-[#F6F6F6] py-2 px-3 rounded-md'>Investor & Employee Visa Eligibility {CheckmarkIcon}</div>
 
-                    <div className='flex gap-1 items-center bg-[#F6F6F6] py-2 px-3 rounded-md'>Tax Advantages {CheckmarkIcon}</div>
+                    <div className='flex gap-1 items-center bg-[#F6F6F6] py-2 px-3 rounded-md'>Business Bank Account Support {CheckmarkIcon}</div>
 
-                    <div className='flex gap-1 items-center bg-[#F6F6F6] py-2 px-3 rounded-md'>100% Foreign Ownership {CheckmarkIcon}</div>
+                    <div className='flex gap-1 items-center bg-[#F6F6F6] py-2 px-3 rounded-md'>Mainland & Free Zone Options {CheckmarkIcon}</div>
 
-                    <div className='flex gap-1 items-center bg-[#F6F6F6] py-2 px-3 rounded-md'>Easy Visa Eligibility {CheckmarkIcon}</div>
+                    <div className='flex gap-1 items-center bg-[#F6F6F6] py-2 px-3 rounded-md'>Local & International Market Access {CheckmarkIcon}</div>
 
                     <div className='flex gap-1 items-center bg-[#F6F6F6] py-2 px-3 rounded-md'>Business Credibility {CheckmarkIcon}</div>
 
-                    <div className='flex gap-1 items-center bg-[#F6F6F6] py-2 px-3 rounded-md'>Opportunity for Expansion {CheckmarkIcon}</div>
+                    <div className='flex gap-1 items-center bg-[#F6F6F6] py-2 px-3 rounded-md'>Expansion Opportunities {CheckmarkIcon}</div>
 
                   </div>
                 </div>
@@ -98,7 +98,7 @@ export default function TradeLicenseAssistance() {
               <div>
                 <h5 className='font-semibold mb-5 text-xl md:text-2xl'>Types of Trade Licenses in Dubai</h5>
                 <div className=' flex flex-col gap-5'>
-                  <p className='text-[#A7A9AC]'>Dubai offers different types of trade licenses depending on your business activity:</p>
+                  {/* <p className='text-[#A7A9AC]'>Dubai offers different types of trade licenses depending on your business activity:</p> */}
                   <div className='grid md:grid-cols-2 gap-6'>
                     <div className='flex gap-4 items-center  text-sm lg:px-3'>
                       <div className='flex  items-center bg-[#F6F6F6] p-4 rounded-full w-16 h-16'>
@@ -132,7 +132,7 @@ export default function TradeLicenseAssistance() {
                       </div>
                       <div>
                         <h5 className='text-xl font-medium mb-1'>Commercial License</h5>
-                        <p className='text-[#A7A9AC]'>For trading and general commercial activities.</p>
+                        <p className='text-[#A7A9AC]'>For trading, import, export, and general commercial activities.</p>
                       </div>
                     </div>
                     <div className='flex gap-4 items-center  text-sm lg:px-3'>
@@ -154,7 +154,7 @@ export default function TradeLicenseAssistance() {
                       </div>
                       <div>
                         <h5 className='text-xl font-medium mb-1'>Professional License</h5>
-                        <p className='text-[#A7A9AC]'>For service providers, consultants, and professionals.</p>
+                        <p className='text-[#A7A9AC]'>For service providers, consultants, professionals, and advisory firms.</p>
                       </div>
                     </div>
                     <div className='flex gap-4 items-center  text-sm lg:px-3'>
@@ -183,7 +183,7 @@ export default function TradeLicenseAssistance() {
                       </div>
                       <div>
                         <h5 className='text-xl font-medium mb-1'>Industrial License</h5>
-                        <p className='text-[#A7A9AC]'> For manufacturing and industrial businesses.</p>
+                        <p className='text-[#A7A9AC]'>For manufacturing, production, and industrial activities.</p>
                       </div>
                     </div>
                     <div className='flex gap-4 items-center  text-sm lg:px-3'>
@@ -215,7 +215,7 @@ export default function TradeLicenseAssistance() {
                       </div>
                       <div>
                         <h5 className='text-xl font-medium mb-1'>Tourism License</h5>
-                        <p className='text-[#A7A9AC]'>For travel, tourism, and hospitality services.</p>
+                        <p className='text-[#A7A9AC]'>For travel, tourism, hospitality, and related service businesses.</p>
                       </div>
                     </div>
                   </div>

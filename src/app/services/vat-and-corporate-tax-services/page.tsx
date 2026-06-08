@@ -53,11 +53,11 @@ export default function VatTaxConsultancy() {
         <div className="max-w-[1320px] mx-auto px-6  grid lg:grid-cols-3 z-1 gap-6 relative">
           <div className='flex flex-col gap-6 lg:gap-12 lg:col-span-2'>
             <div>
-              <h1 className='text-3xl lg:text-[36px] xl:text-[48px] font-bold mb-1 leading-tight max-w-[600px] mb-2'>VAT and Tax Consultancy</h1>
-              <p className='max-w-[500px]'>Accurate, on-time accounting with bookkeeping, reconciliations, and clear financial reporting that strengthens control and supports confident decisions.</p>
+              <h1 className='text-3xl lg:text-[36px] xl:text-[48px] font-bold mb-1 leading-tight max-w-[600px] mb-2'>VAT & Corporate Tax Services in UAE</h1>
+              <p className='max-w-[500px]'>Accurate tax registration, filing, accounting, and compliance support for UAE businesses.</p>
             </div>
             <Image
-              src="/vat.png"
+              src="/vat.jpg"
               alt="Business for Success"
               width={550}
               height={550}
@@ -65,9 +65,10 @@ export default function VatTaxConsultancy() {
             />
             <div className='flex flex-col gap-8 md:gap-12'>
               <div>
-                <h5 className='font-semibold mb-5 text-xl md:text-2xl'>Accounting & Bookkeeping Services</h5>
+                <h5 className='font-semibold mb-5 text-xl md:text-2xl'>Professional VAT, Corporate Tax & Accounting Support</h5>
                 <div className='text-[#A7A9AC] flex flex-col gap-4'>
-                  <p >At INSPO Corporate Services, we provide accurate and timely accounting support to help businesses maintain strong financial control. Our services include day-to-day bookkeeping, preparation of ledgers, bank reconciliation, monthly and annual financial statements, and management reports. By maintaining organized and up-to-date records, we give our clients a clear picture of their business performance and the confidence to make informed decisions.</p>
+                  <p >At INSPO Businessmen Services LLC, we help businesses stay compliant with UAE VAT and Corporate Tax regulations through accurate registration, filing, bookkeeping, and financial reporting support.</p>
+                  <p>Our team assists with VAT registration, VAT return filing, Corporate Tax registration, accounting records, payroll support, and compliance guidance. We make the process simple, organized, and reliable so your business can avoid penalties and make confident financial decisions.</p>
                 </div>
 
               </div>
@@ -90,8 +91,57 @@ export default function VatTaxConsultancy() {
 
 
                     </div>
-                    <h5 className='text-lg md:text-xl font-semibold mb-2'>Tax Advisory & Compliance</h5>
-                    <p className='text-[#A7A9AC]'>Our experienced professionals offer practical tax planning and compliance solutions tailored to your organization’s goals. From VAT registration and filing to corporate tax advisory, we ensure that your business meets all UAE regulatory requirements while optimizing tax efficiency. We stay updated with the latest laws and guidelines so our clients remain compliant and avoid unnecessary penalties.</p>
+                    <h5 className='text-lg md:text-xl font-semibold mb-2'>VAT Registration & Filing</h5>
+                    <p className='text-[#A7A9AC]'>Complete support for VAT registration, VAT return filing, and FTA compliance.</p>
+                  </div>
+                  <div className='  text-sm lg:px-3'>
+                    <div className='flex  items-center bg-[#F6F6F6] p-4 rounded-full w-16 h-16 mb-2'>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1"
+                      >
+                        <rect x="4" y="3" width="16" height="18" rx="1" />
+                        <path d="M8 8h8" />
+                        <path d="M8 12h8" />
+                        <path d="M8 16h4" />
+                        <path d="M16 16l2 2 3-3" />
+                      </svg>
+
+
+
+
+
+                    </div>
+                    <h5 className='text-lg md:text-xl font-semibold mb-2'>Corporate Tax Registration & Filing</h5>
+                    <p className='text-[#A7A9AC]'>Assistance with Corporate Tax registration, return filing, and compliance requirements.</p>
+                  </div>
+                  <div className='  text-sm lg:px-3'>
+                    <div className='flex  items-center bg-[#F6F6F6] p-4 rounded-full w-16 h-16 mb-2'>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1"
+                      >
+                        <rect x="4" y="2" width="16" height="20" rx="2" />
+                        <rect x="8" y="6" width="8" height="3" />
+                        <path d="M8 13h2M14 13h2M8 17h2M14 17h2" />
+                      </svg>
+
+
+
+
+                    </div>
+                    <h5 className='text-lg md:text-xl font-semibold mb-2'>Accounting & Bookkeeping</h5>
+                    <p className='text-[#A7A9AC]'>Accurate bookkeeping, ledger maintenance, bank reconciliation, and financial records.</p>
                   </div>
                   <div className='  text-sm lg:px-3'>
                     <div className='flex  items-center bg-[#F6F6F6] p-4 rounded-full w-16 h-16 mb-2'>
@@ -110,7 +160,7 @@ export default function VatTaxConsultancy() {
 
                     </div>
                     <h5 className='text-lg md:text-xl font-semibold mb-2'>Payroll & Employee Benefits</h5>
-                    <p className='text-[#A7A9AC]'>We provide efficient payroll management to help businesses process salaries, benefits, and end-of-service settlements accurately and on time. Our services include wage protection system (WPS) compliance, employee benefits administration, and statutory deductions, giving employers peace of mind while supporting staff satisfaction.</p>
+                    <p className='text-[#A7A9AC]'>Payroll processing, salary calculations, WPS support, and employee benefit management.</p>
                   </div>
                   <div className='  text-sm lg:px-3'>
                     <div className='flex  items-center bg-[#F6F6F6] p-4 rounded-full w-16 h-16 mb-2'>
@@ -131,7 +181,7 @@ export default function VatTaxConsultancy() {
                     </div>
                     <h5 className='text-lg md:text-xl font-semibold mb-2'>Audit Assistance &
                       Financial Review</h5>
-                    <p className='text-[#A7A9AC]'>INSPO Corporate Services partners with leading audit firms to deliver comprehensive support during statutory audits or internal financial reviews. We prepare reconciliations, organize supporting documents, and ensure smooth coordination with auditors — helping you achieve transparent and reliable financial reporting.</p>
+                    <p className='text-[#A7A9AC]'>Support for financial reviews, documentation, reconciliation, and audit coordination.</p>
                   </div>
                   <div className='  text-sm lg:px-3'>
                     <div className='flex  items-center bg-[#F6F6F6] p-4 rounded-full w-16 h-16 mb-2'>
@@ -150,15 +200,16 @@ export default function VatTaxConsultancy() {
 
 
                     </div>
-                    <h5 className='text-lg md:text-xl font-semibold mb-2'>Business Support
-                      & Advisory</h5>
-                    <p className='text-[#A7A9AC]'>Beyond compliance, our team acts as a trusted advisor, guiding clients on budgeting, cash flow planning, and strategic growth decisions. Whether you are launching a new venture, scaling an existing operation, or restructuring finances, we tailor solutions that align with your long-term objectives.</p>
+                    <h5 className='text-lg md:text-xl font-semibold mb-2'>Business Tax Advisory</h5>
+                    <p className='text-[#A7A9AC]'>Practical tax and compliance guidance to help your business stay organized and penalty-free.</p>
                   </div>
                 </div>
               </div>
               <div className='lg:p-10 p-5 text-white bg-[var(--blue)] rounded-xl grid md:grid-cols-2 gap-6'>
-                <h4 className=' text-xl max-w-[300px]'>Explore Our Tailored PRO
-                  Service Packages</h4>
+                <div>
+                  <h4 className=' text-xl max-w-[300px]'>Need VAT & Tax Support?</h4>
+                <p className='text-sm pt-1'>Call us today for professional tax and accounting assistance.</p>
+                </div>
 
                 <li className="flex items-center gap-4">
                   <span className="bg-white p-3 rounded-full  w-12 h-12 flex items-center justify-center">
@@ -168,8 +219,8 @@ export default function VatTaxConsultancy() {
 
                   </span>
                   <div className="flex flex-col gap-1">
-                    <span className="text-[14px]">Call Us 24/7</span>
-                    <span className="font-semibold">+91 9048 552244</span>
+                    <span className="text-[14px]">Get Tax Consultancy Support</span>
+                    <span className="font-semibold">+971505614942</span>
                   </div>
                 </li>
 
@@ -180,7 +231,7 @@ export default function VatTaxConsultancy() {
           </div>
           <div className='lg:col-span-1'>
             <div className='max-w-[500px] mx-auto'>
-              <ServiceTabs current="/services/vat-tax-consultancy" />
+              <ServiceTabs current="/services/vat-and-corporate-tax-services" />
             </div>
           </div>
 

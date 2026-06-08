@@ -3,16 +3,16 @@ import Image from "next/image";
 
 const services = [
     { href: "/services/trade-license-assistance", label: "Trade License Assistance" },
-    { href: "/services/pro-services", label: "PRO Services" },
-
-    { href: "/services/golden-visa", label: "Golden Visa" },
-    { href: "/services/local-sponsorship-nominee-services", label: "Local Sponsorship & Nominee Services" },
-    { href: "/services/marketing-services", label: "Marketing Services" },
-    { href: "/services/vat-tax-consultancy", label: "VAT & Tax Consultancy" },
+    { href: "/services/pro-and-government-services", label: "PRO & Government Services" },
+    { href: "/services/vat-and-corporate-tax-services", label: "VAT & Corporate Tax Services" },
+    { href: "/services/visa-and-immigration-services", label: "Visa & Immigration Services" },
+    { href: "/services/corporate-bank-account-support", label: "Corporate Bank Account Support" },
+    { href: "/services/golden-visa-assistance", label: "Golden Visa Assistance" },
+    { href: "/services/local-sponsorship-services", label: "Local Sponsorship Services" },
     { href: "/services/business-centre-solutions", label: "Business Centre Solutions" },
-    { href: "/services/bank-account-opening-support", label: "Bank Account Opening Support" },
-    { href: "/services/visa-immigration-support", label: "Visa & Immigration Support" },
-    { href: "/services/web-application-development", label: "Web & Application Development" },
+    { href: "/services/digital-marketing-services", label: "Digital  Marketing Services" },
+
+    { href: "/services/website-and-app-development", label: "Website & Application Development" },
 ];
 
 

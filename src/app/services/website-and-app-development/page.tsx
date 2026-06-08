@@ -348,7 +348,7 @@ export default function WebApplicationDevelopment() {
           </div>
           <div className='lg:col-span-1'>
             <div className='max-w-[500px] mx-auto'>
-              <ServiceTabs current="/services/web-application-development" />
+              <ServiceTabs current="/services/website-and-app-development" />
             </div>
           </div>
 

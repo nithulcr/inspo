@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import clsx from "clsx";
+import Link from "next/link";
 
 type AnimatedButtonProps = {
   label: string;
@@ -47,6 +48,23 @@ export default function AnimatedButton({
           )}
         </div>
       </button>
+    );
+  }
+  
+  if (href && !isExternal) {
+    return (
+      <Link
+        href={href}
+        prefetch={true}
+        className={clsx("button", className)}
+      >
+        <div className="button-outline"></div>
+        <div ref={outlineRef} className="button-text flex items-center gap-2">
+          {label} {imgOrSvg && (
+            <span className="img_or_svg z-9">{imgOrSvg}</span>
+          )}
+        </div>
+      </Link>
     );
   }
 

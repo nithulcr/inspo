@@ -19,7 +19,7 @@ const cards = [
             "Complete Company Startup",
         ],
         button: "Contact Sales",
-        link: "/contact-sales",
+        link: "/ContactUs",
         highlight: false,
     },
     {
@@ -38,7 +38,7 @@ const cards = [
             "Hassle-Free Company Registration",
         ],
         button: "Contact Sales",
-        link: "/contact-sales",
+        link: "/ContactUs",
         highlight: false,
     },
     {
@@ -57,7 +57,7 @@ const cards = [
             "Legal & Compliance Guidance",
         ],
         button: "Contact Sales",
-        link: "/contact-sales",
+        link: "/ContactUs",
         highlight: true, // Bold features for third card
     },
 ];
@@ -68,10 +68,11 @@ export default function UaeCompanyCards() {
             <div className="max-w-[1320px] mx-auto  px-6">
                 <div className="max-w-[840px] mx-auto mb-8 lg:mb-18">
                     <h2 className="text-2xl lg:text-[40px] font-semibold leading-tight text-center mb-3 max-w-xl mx-auto">
-                       Establish Your Business in the UAE with Ease
+                      Establish Your Business in the UAE with Ease
                     </h2>
+                    <h4 className="mx-auto text-center my-2 text-lg">Transparent pricing, expert guidance, and compliance-focused process – from setup to success.</h4>
                     <p className="text-gray-400 text-sm md:text-base max-w-3xl mx-auto text-center">
-                       At INSPO Corporate Services, we provide comprehensive business setup solutions across the UAE — including mainland, free zones, and offshore options. Our customized packages cover licensing, office space, visas, and more, ensuring a smooth and hassle-free journey for entrepreneurs and investors. With our expertise, starting your business in the UAE has never been simpler.
+                      At INSPO Businessmen Services LLC, we provide complete business setup solutions across UAE mainland, free zones, and offshore. Our tailored packages include licensing, office space, visas, and more – ensuring a smooth, hassle free journey for entrepreneurs and investors.
                     </p>
                 </div>
                 <div className="flex overflow-auto md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 -mr-6 -ml-6 md:m-0 pl-6 pr-6 md:p-0">
@@ -113,11 +114,12 @@ export default function UaeCompanyCards() {
                                     </ul>
                                 </div>
 
-                                <AnimatedButton href={card.link} label="Contact sales" className="w-full text-white mt-2 lg:mt-6 mx-auto" />
+                                <AnimatedButton href={card.link} label="Enquire Now" className="w-full text-white mt-2 lg:mt-6 mx-auto" />
                             </div>
                         </div>
                     ))}
                 </div>
+                 <AnimatedButton href="/services" label="Other Services" className="w-fit text-white mt-14 lg:mt-20 mx-auto" />
             </div>
         </section>
     );

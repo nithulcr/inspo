@@ -85,7 +85,7 @@ export default function CostCalculator() {
     };
 
     return (
-        <section className="">
+        <section id="costCalculator" className="">
             <div className="max-w-[1320px] pb-14 pt-8 lg:pt-16 lg:pb-24 mx-auto px-6">
                 <div className="rounded-4xl p-6 lg:p-20 bg-[var(--blue)] flex items-center justify-center">
                     <div className="w-full max-w-[700px]">

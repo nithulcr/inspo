@@ -14,7 +14,7 @@ export const CheckmarkIcon = (
   </svg>
 );
 
-export async function generateMetadata(){
+export async function generateMetadata() {
 
   const metadata: Metadata = {
     title: 'Service Inspo | Corporative Services',
@@ -41,7 +41,7 @@ import ServiceTabs from "@/app/components/ServiceTabs";
 
 
 
-export default function VisaImmigrationSupport() {
+export default function MarketingServices() {
   return (
     <>
       <Header />
@@ -52,12 +52,11 @@ export default function VisaImmigrationSupport() {
         <div className="max-w-[1320px] mx-auto px-6  grid lg:grid-cols-3 z-1 gap-6 relative">
           <div className='flex flex-col gap-6 lg:gap-12 lg:col-span-2'>
             <div>
-              <h1 className='text-3xl lg:text-[36px] xl:text-[48px] font-bold mb-1 leading-tight max-w-[500px] mb-2'>Visa & Immigration
-Support</h1>
-              <p className='max-w-[500px]'>End-to-end UAE visa and immigration support for tourists, professionals, investors, and families—from entry permits to residency stamping and compliance.</p>
+              <h1 className='text-3xl lg:text-[36px] xl:text-[48px] font-bold mb-1 leading-tight max-w-[500px] mb-2'>Marketing  Service</h1>
+              <p className='max-w-[420px]'>Strategic, data‑driven marketing that elevates brand visibility, engages audiences, and delivers measurable growth through end‑to‑end, performance‑focused campaigns.</p>
             </div>
             <Image
-              src="/visa.png"
+              src="/marketing.png"
               alt="Business for Success"
               width={550}
               height={550}
@@ -65,43 +64,20 @@ Support</h1>
             />
             <div className='flex flex-col gap-8 md:gap-12'>
               <div>
-                <h5 className='font-semibold mb-5 text-xl md:text-2xl'>UAE Visa & Immigration Solutions</h5>
+                <h5 className='font-semibold mb-5 text-xl md:text-2xl'>Data‑Driven Marketing, Creative Impact</h5>
                 <div className='text-[#A7A9AC] flex flex-col gap-4'>
-                  <p >Get end-to-end UAE visa and immigration solutions covering tourist and visit visas, employment and investor residency, family sponsorship, and long-term options like the Golden Visa. Services include entry permits, medicals, Emirates ID biometrics, status changes, renewals, and overstay fine clearances—plus establishment card and quota setup, Arabic legal translations, attestation, and government liaison. A dedicated team manages documentation and timelines from application to stamping, ensuring fast approvals, full compliance, and a smooth relocation experience.</p>
+                  <p >At Inspo Corporate Services, we pride ourselves on delivering premium marketing management and comprehensive marketing solutions designed to empower businesses in a fast-evolving marketplace. Our team combines strategic expertise with innovative thinking to craft bespoke campaigns that enhance brand visibility, engage audiences, and drive measurable growth. From brand positioning and creative content development to targeted advertising, social media management, and market research, we provide end-to-end support that ensures your marketing initiatives deliver maximum impact.</p>
+                  <p>What sets us apart is our commitment to understanding your business objectives and translating them into clear, result-oriented strategies. We focus on creating sustainable value through data-driven insights, cutting-edge tools, and creative storytelling, helping you stay ahead of competitors while building long-lasting connections with your customers. Partnering with Inspo Corporate Services means choosing a dedicated team that elevates your brand and fuels your success through thoughtful, performance-driven marketing solutions.</p>
+
                 </div>
 
               </div>
-              <div>
-                <h5 className='font-semibold mb-5 text-xl md:text-2xl'>What do we offer?</h5>
-                <div className=' flex flex-col gap-5'>
-                  <div className='flex gap-2 flex-wrap text-sm'>
-                    <div className='flex gap-1 items-center bg-[#F6F6F6] py-2 px-3 rounded-md'>Skilled Immigration Services {CheckmarkIcon}</div>
-                    <div className='flex gap-1 items-center bg-[#F6F6F6] py-2 px-3 rounded-md'>Work Permit Visa Services {CheckmarkIcon}</div>
 
-                    <div className='flex gap-1 items-center bg-[#F6F6F6] py-2 px-3 rounded-md'>Job Seeker/ Research Visa Services {CheckmarkIcon}</div>
-
-                    <div className='flex gap-1 items-center bg-[#F6F6F6] py-2 px-3 rounded-md'>Visit Visa Assistance {CheckmarkIcon}</div>
-
-                    <div className='flex gap-1 items-center bg-[#F6F6F6] py-2 px-3 rounded-md'>Study Abroad Services {CheckmarkIcon}</div>
-
-                    <div className='flex gap-1 items-center bg-[#F6F6F6] py-2 px-3 rounded-md'>Family and Spouse Visa Services {CheckmarkIcon}</div>
-
-                    <div className='flex gap-1 items-center bg-[#F6F6F6] py-2 px-3 rounded-md'>Student Visa Assistance {CheckmarkIcon}</div>
-
-                    <div className='flex gap-1 items-center bg-[#F6F6F6] py-2 px-3 rounded-md'>Permanent Residency Support {CheckmarkIcon}</div>
-                    <div className='flex gap-1 items-center bg-[#F6F6F6] py-2 px-3 rounded-md'>Business and Entrepreneur Visa Services {CheckmarkIcon}</div>
-
-
-                  </div>
-                </div>
-
-              </div>
-             
             </div>
           </div>
           <div className='lg:col-span-1'>
             <div className='max-w-[500px] mx-auto'>
-            <ServiceTabs current="/services/visa-immigration-support" />
+              <ServiceTabs current="/services/digital-marketing-services" />
             </div>
           </div>
 

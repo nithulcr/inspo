@@ -294,7 +294,7 @@ export default function GoldenVisa() {
           </div>
           <div className='lg:col-span-1'>
             <div className='max-w-[500px] mx-auto'>
-              <ServiceTabs current="/services/golden-visa" />
+              <ServiceTabs current="/services/golden-visa-assistance" />
             </div>
           </div>
 

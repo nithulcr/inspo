@@ -19,35 +19,28 @@ interface Testimonial {
 // Example avatars (replace src paths with your actual assets)
 const testimonialsItems = [
     {
-        name: "Alex jonas",
-        role: "JS Marketing",
+        name: "Muhammed Basheer ",
+        role: "Magnatech, UAE",
         rating: 5.0,
-        review: "Top One's exceptional approach to my Dubai business setup surpassed all expectations. Their meticulous attention to detail and understanding of European business intricacies ensured a",
+        review: "INSPO made our Dubai business setup smooth, fast, and fully compliant. Their strong knowledge of the UAE market and government procedures helped us start our business with complete confidence.",
         avatar: "/client1.png",
     },
     {
-        name: "John Robert",
-        role: "SM Strategy",
+        name: "Abdul Rasheed",
+        role: "Magnarab Equipments Trading LLC, UAE",
         rating: 5.0,
-        review: "Top One's exceptional approach to my Dubai business setup surpassed all expectations. Their meticulous attention to detail and understanding of European business intricacies ensured a",
+        review: "From trade license approval to visa processing, INSPO handled every step professionally. Their UAE market experience saved us time and made the whole process hassle-free.",
         avatar: "/client1.png",
     },
     {
-        name: "Maggie Hue",
-        role: "BS Growth Ceo",
-        rating: 4.8,
-        review: "Top One's exceptional approach to my Dubai business setup surpassed all expectations. Their meticulous attention to detail and understanding of European business intricacies ensured a",
+        name: "Hejamady Kody ",
+        role: "Electra Technical Service LLC, UAE",
+        rating: 5.0,
+        review: "INSPO guided us through our UAE free zone company setup with transparency and clear advice. No hidden charges, no confusion, and excellent support from start to finish.",
         avatar: "/client1.png",
     },
 
-    {
-        name: "jack hamma",
-        role: "JK Finance",
-        rating: 5.0,
-        review: "Top One's exceptional approach to my Dubai business setup surpassed all expectations. Their meticulous attention to detail and understanding of European business intricacies ensured a",
-        avatar: "/client1.png",
-    },
-
+   
 
 ];
 
@@ -63,12 +56,12 @@ export default function Testimonials() {
     }, []);
 
     return (
-        <section className="bg-[var(--blue)] testimonials-section overflow-hidden relative lg:py-30 py-14 text-white">
+        <section className="testimonial bg-[var(--blue)] testimonials-section overflow-hidden relative lg:py-30 py-14 text-white">
             <div className="mx-auto  max-w-[1320px] lg:pl-6  flex flex-col items-center justify-center">
                 <div className="max-w-[540px] mx-auto mb-8">
                     <h2 className="text-2xl lg:text-[40px] font-medium  text-center">
                         <span className='font-light2'>Inspired Journeys: </span><br></br>
-                       Real Experiences from Our Happy Clients
+                     Real Stories from Our Happy Clients
                     </h2>
 
                 </div>
