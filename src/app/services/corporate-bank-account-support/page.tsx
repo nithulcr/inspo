@@ -57,7 +57,7 @@ export default function BankAccountOpeningSupport() {
               <p className='max-w-[500px]'>Professional assistance with bank selection, KYC documentation, and account opening for UAE businesses.</p>
             </div>
             <Image
-              src="/bank-account.png"
+              src="/bank-account.jpg"
               alt="Business for Success"
               width={550}
               height={550}
