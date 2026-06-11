@@ -11,44 +11,30 @@ import AnimatedButton from "./AnimatedButton";
 const partnersEn = [
   {
     id: "01",
-    icon: "/partners/1.png",
+    icon: "/marquee-logos/logo9.png",
 
   },
   {
     id: "02",
-    icon: "/partners/2.png",
+    icon: "/marquee-logos/logo10.png",
 
   },
   {
     id: "03",
-    icon: "/partners/3.png",
+    icon: "/marquee-logos/logo11.png",
 
   },
   {
     id: "04",
-    icon: "/partners/4.png",
+    icon: "/marquee-logos/logo12.png",
 
   },
   {
     id: "05",
-    icon: "/partners/5.png",
+    icon: "/marquee-logos/logo13.png",
 
   },
-  {
-    id: "06",
-    icon: "/partners/6.png",
-
-  },
-  {
-    id: "07",
-    icon: "/partners/7.png",
-
-  },
-  {
-    id: "08",
-    icon: "/partners/5.png",
-
-  },
+ 
 
 ];
 
@@ -119,7 +105,7 @@ const Partners = () => {
       </div>
       <div className="max-w-[1320px] mx-auto hidden lg:block px-6">
         <div className="  p-4 lg:p-8 partners-container rounded-2xl  bg-[#F6F6F6]">
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid grid-cols-5 gap-4">
 
             {partners.map((partner) => (
               <div key={partner.id}>
@@ -127,7 +113,7 @@ const Partners = () => {
                   <Image
                     src={partner.icon}
                     alt="logo"
-                    className="w-full h-12 object-contain mx-auto mb-2"
+                    className="w-full h-17 object-contain mx-auto"
                     width={100}
                     height={100}
                   />
