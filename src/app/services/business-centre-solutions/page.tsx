@@ -26,7 +26,6 @@ export async function generateMetadata() {
   return metadata;
 }
 
-import Header from "../../components/Header";
 import Partners from "../../components/Partners";
 
 import CostCalculator from "../../components/CostCalculator";
@@ -35,7 +34,7 @@ import CostCalculator from "../../components/CostCalculator";
 
 import ConsultationBanner from "../../components/ConsultationBanner";
 
-import Footer from "../../components/Footer";
+
 import ServiceTabs from "@/app/components/ServiceTabs";
 
 
@@ -44,7 +43,7 @@ import ServiceTabs from "@/app/components/ServiceTabs";
 export default function BusinessCentreSolutions() {
   return (
     <>
-      <Header />
+      
       <section className="py-14 lg:py-20    mt-[70] lg:mt-[100px] service-section relative">
         <div className='service-shape'>
           <div className='max-w-[1320px] px-6 relative w-full h-full mx-auto'></div>
@@ -178,7 +177,7 @@ export default function BusinessCentreSolutions() {
       <Partners />
       <CostCalculator />
 
-      <Footer />
+      
     </>
   );
 }

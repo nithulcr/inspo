@@ -11,27 +11,27 @@ import AnimatedButton from "./AnimatedButton";
 const partnersEn = [
   {
     id: "01",
-    icon: "/marquee-logos/logo9.png",
+    icon: "/partners/logo9.png",
 
   },
   {
     id: "02",
-    icon: "/marquee-logos/logo10.png",
+    icon: "/partners/logo10.png",
 
   },
   {
     id: "03",
-    icon: "/marquee-logos/logo11.png",
+    icon: "/partners/logo11.png",
 
   },
   {
     id: "04",
-    icon: "/marquee-logos/logo12.png",
+    icon: "/partners/logo12.png",
 
   },
   {
     id: "05",
-    icon: "/marquee-logos/logo13.png",
+    icon: "/partners/logo13.png",
 
   },
  

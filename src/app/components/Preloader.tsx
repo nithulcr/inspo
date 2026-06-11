@@ -13,7 +13,7 @@ const Preloader: React.FC<PreloaderProps> = ({ onComplete }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setFadeOut(true); // Start fade out animation
-    }, 2000); // Simulate a 2-second loading time
+    }, 500); // Simulate a 500ms loading time
 
     return () => clearTimeout(timer);
   }, []);

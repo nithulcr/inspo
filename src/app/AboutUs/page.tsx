@@ -14,7 +14,6 @@ export async function generateMetadata(
   return metadata;
 }
 
-import Header from "../components/Header";
 import Partners from "../components/Partners";
 
 import CostCalculator from "../components/CostCalculator";
@@ -23,7 +22,7 @@ import CostCalculator from "../components/CostCalculator";
 
 import ConsultationBanner from "../components/ConsultationBanner";
 
-import Footer from "../components/Footer";
+
 
 
 
@@ -32,7 +31,7 @@ import Footer from "../components/Footer";
 export default function Home() {
   return (
     <>
-      <Header />
+      
       <section className="py-14 lg:py-20    mt-[70] lg:mt-[100px] bg-[#F6F6F6]">
         <div className="max-w-[1320px] mx-auto px-6 flex flex-col gap-6 lg:gap-12">
           <div>
@@ -146,7 +145,7 @@ Ready to establish or expand your business in the UAE? Let’s talk. Your journe
       <Partners />
       <CostCalculator />
 
-      <Footer />
+      
     </>
   );
 }

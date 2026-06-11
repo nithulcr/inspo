@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import Preloader from "./Preloader";
-import Header from "./Header";
 import Hero from "./Hero";
 import Marquee from "./Marquee";
 // import ThreeStepProcess from "./ThreeStepProcess";
@@ -25,7 +24,6 @@ import ConsultationBanner from "./ConsultationBanner";
 
 import Services from "./Services";
 import Partners from "./Partners";
-import Footer from "./Footer";
 
 export default function HomePageClient() {
   const [showContent, setShowContent] = useState(false);
@@ -54,7 +52,6 @@ export default function HomePageClient() {
       {shouldShowPreloader && <Preloader onComplete={handlePreloaderComplete} />}
       {showContent && (
         <>
-          <Header />
           <Hero />
           <Features />
           <Marquee />
@@ -73,15 +70,6 @@ export default function HomePageClient() {
 
           <Partners />
           <CostCalculator />
-
-
-
-
-
-
-
-
-          <Footer />
         </>
       )}
     </div>
